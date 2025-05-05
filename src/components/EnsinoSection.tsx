@@ -1,5 +1,5 @@
 
-import { GraduationCap, Clock, Image } from "lucide-react";
+import { GraduationCap, Clock, Image, Star } from "lucide-react";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { AspectRatio } from "@/components/ui/aspect-ratio";
 
