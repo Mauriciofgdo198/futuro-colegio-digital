@@ -45,7 +45,7 @@ const VideoSection = () => {
               </>
             ) : (
               <iframe
-                src="https://www.youtube.com/embed/dQw4w9WgXcQ?autoplay=1"
+                src="https://www.youtube.com/embed/fJ83sXLEDKU?autoplay=1"
                 title="Proposta Pedagógica"
                 className="absolute top-0 left-0 w-full h-full border-0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
