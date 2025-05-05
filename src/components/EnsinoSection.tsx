@@ -1,6 +1,7 @@
 
-import { GraduationCap, Clock, Star } from "lucide-react";
+import { GraduationCap, Clock, Image } from "lucide-react";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import { AspectRatio } from "@/components/ui/aspect-ratio";
 
 const EnsinoSection = () => {
   const niveis = [
@@ -8,36 +9,36 @@ const EnsinoSection = () => {
       titulo: "Educação Infantil",
       descricao: "Desenvolvemos as habilidades cognitivas, motoras e socioemocionais com atividades lúdicas e estimulantes.",
       icone: <Star className="h-10 w-10 text-colegio-amarelo" />,
-      faixaEtaria: "2 a 5 anos",
-      cor: "border-t-colegio-amarelo"
+      cor: "border-t-colegio-amarelo",
+      imagem: "/placeholder.svg"
     },
     {
       titulo: "Ensino Fundamental I",
       descricao: "Consolidamos a alfabetização e o raciocínio lógico, promovendo autonomia e consciência social.",
       icone: <GraduationCap className="h-10 w-10 text-colegio-azul" />,
-      faixaEtaria: "6 a 10 anos",
-      cor: "border-t-colegio-azul"
+      cor: "border-t-colegio-azul",
+      imagem: "/placeholder.svg"
     },
     {
       titulo: "Ensino Fundamental II",
       descricao: "Aprofundamos o conhecimento nas diversas áreas, desenvolvendo pensamento crítico e base científica.",
       icone: <GraduationCap className="h-10 w-10 text-colegio-azul" />,
-      faixaEtaria: "11 a 14 anos",
-      cor: "border-t-colegio-azul"
+      cor: "border-t-colegio-azul",
+      imagem: "/placeholder.svg"
     },
     {
       titulo: "Ensino Médio",
       descricao: "Preparamos para o Enem e vestibulares com metodologia avançada e foco no projeto de vida do aluno.",
       icone: <GraduationCap className="h-10 w-10 text-colegio-azul" />,
-      faixaEtaria: "15 a 17 anos",
-      cor: "border-t-colegio-azul"
+      cor: "border-t-colegio-azul",
+      imagem: "/placeholder.svg"
     },
     {
       titulo: "Período Integral",
       descricao: "Oferecemos atividades extracurriculares, acompanhamento de tarefas e projetos complementares.",
       icone: <Clock className="h-10 w-10 text-colegio-amarelo" />,
-      faixaEtaria: "Todas as idades",
-      cor: "border-t-colegio-amarelo"
+      cor: "border-t-colegio-amarelo",
+      imagem: "/placeholder.svg"
     }
   ];
 
@@ -54,15 +55,26 @@ const EnsinoSection = () => {
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
           {niveis.map((nivel, index) => (
             <Card key={index} className={`border-t-4 ${nivel.cor} hover:shadow-lg transition-shadow`}>
+              <div className="relative">
+                <AspectRatio ratio={16/9}>
+                  <div className="relative h-full w-full overflow-hidden rounded-t-lg">
+                    <img 
+                      src={nivel.imagem} 
+                      alt={`Imagem ${nivel.titulo}`} 
+                      className="object-cover h-full w-full"
+                    />
+                    <div className="absolute inset-0 bg-black/20 flex items-center justify-center opacity-0 hover:opacity-100 transition-opacity">
+                      <Image className="h-8 w-8 text-white" />
+                    </div>
+                  </div>
+                </AspectRatio>
+              </div>
               <CardHeader className="flex flex-row items-center justify-between pb-2">
                 <CardTitle className="text-xl font-bold text-gray-800">{nivel.titulo}</CardTitle>
                 {nivel.icone}
               </CardHeader>
               <CardContent>
-                <p className="text-gray-600 mb-4">{nivel.descricao}</p>
-                <div className="inline-block bg-gray-100 rounded-full px-3 py-1 text-sm font-medium text-gray-800">
-                  Faixa etária: {nivel.faixaEtaria}
-                </div>
+                <p className="text-gray-600">{nivel.descricao}</p>
               </CardContent>
             </Card>
           ))}
