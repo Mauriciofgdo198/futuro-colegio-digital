@@ -10,28 +10,28 @@ const EnsinoSection = () => {
       descricao: "Desenvolvemos as habilidades cognitivas, motoras e socioemocionais com atividades lúdicas e estimulantes.",
       icone: <Star className="h-10 w-10 text-colegio-amarelo" />,
       cor: "border-t-colegio-amarelo",
-      imagem: "https://www.cocvilayara.com.br/blog/img/blog-entenda-porque-a-escola-e-tao-importante-no-processo-de-socializacao-das-criancas.jpg"
+      imagem: "https://lh3.googleusercontent.com/pw/AP1GczN6pI69zD1OSBfdi340sENTJFt4mCQ5mvevH7SbKo0Cw2qQOagNWBY0A9ryLlYhFdqiwZUrVq8SR-KiuV0C6OVlkA6L4rCEA5zlMuqdWaoCD8cqlzN-c-FTYhBHZK30QQipA4S5jc5YaS4WU3zfAzNN=w1430-h953-s-no-gm?authuser=0"
     },
     {
       titulo: "Ensino Fundamental I",
       descricao: "Consolidamos a alfabetização e o raciocínio lógico, promovendo autonomia e consciência social.",
       icone: <GraduationCap className="h-10 w-10 text-colegio-azul" />,
       cor: "border-t-colegio-azul",
-      imagem: "https://images.unsplash.com/photo-1509869175650-a1d97972541a?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+      imagem: "https://lh3.googleusercontent.com/pw/AP1GczPwo06qVekLw6U_RPNRe5-m9kQG1xRtACiGPsS1fxGZopGokWYi_lwPbzgWM2y7PWlTiWno38FX32o2YEg2FC8YYQMDM-3h42mjA4DNx-SXcbQR15phQWjwIuEzTHaBrFJjytHSwUTx3LoFmj2oOps6=w1430-h953-s-no-gm?authuser=0"
     },
     {
       titulo: "Ensino Fundamental II",
       descricao: "Aprofundamos o conhecimento nas diversas áreas, desenvolvendo pensamento crítico e base científica.",
       icone: <GraduationCap className="h-10 w-10 text-colegio-amarelo" />,
       cor: "border-t-colegio-amarelo",
-      imagem: "https://lh3.googleusercontent.com/pw/AP1GczPnsNK5Oiahw05IhK1lmfspgGPgKs5YvIIQEgzIVRNWM317DJHaTUgpihEqsd4Q40Z_k5P1Em0tRRB78m6ko25a5J96FS7brY-6sUYqHIqwLy9k3vo_LvX8IRdPAjIJHos64SHi0GnazCp4geLUrO9O=w635-h953-s-no-gm?authuser=0"
+      imagem: "https://lh3.googleusercontent.com/pw/AP1GczOtV7lJGT15V9lCAyfsVc1skjwh7mZpys5YRYhlzbXQg0t1NDaA9P3Ewu7fyzPPbcxuq93hch8Dv4zFZDDfdDMxvUJbkzgLAcSzKLthVM2uYaQwky3glQdR8odMw72ywIBrzBtfjqNNzMw_4dXgjTy_=w1430-h953-s-no-gm?authuser=0"
     },
     {
       titulo: "Ensino Médio",
       descricao: "Preparamos para o Enem e vestibulares com metodologia avançada e foco no projeto de vida do aluno.",
       icone: <GraduationCap className="h-10 w-10 text-colegio-azul" />,
       cor: "border-t-colegio-azul",
-      imagem: "https://images.unsplash.com/photo-1523240795612-9a054b0db644?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+      imagem: "https://lh3.googleusercontent.com/pw/AP1GczPFgl9vh7DrJ0NgNg8lFXH-JGGWHVTpkxveFLUgO4NSAc8U8-PPwrsLaMhSoy6RXO-9ZnWwnSi5vD2-3WPxAUNmzna9PVHUHH5NKEAOi8ERvThpLbYYnTRzp24xDgU1MCUXoRtyMyHLeyuQTWGLHUxy=w1430-h953-s-no-gm?authuser=0"
     },
     {
       titulo: "Período Integral",
