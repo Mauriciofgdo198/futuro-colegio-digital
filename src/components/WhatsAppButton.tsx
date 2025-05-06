@@ -7,7 +7,7 @@ const WhatsAppButton = () => {
       <Tooltip>
         <TooltipTrigger asChild>
           <a
-            href="https://wa.me/1234567890" // Substitua pelo número real
+            href="https://api.whatsapp.com/send/?phone=553187780923&text&type=phone_number&app_absent=0"
             target="_blank"
             rel="noopener noreferrer"
             className="fixed bottom-6 right-6 bg-[#25D366] text-white p-4 rounded-full shadow-lg hover:bg-[#20BA5C] transition-colors z-50 flex items-center justify-center"

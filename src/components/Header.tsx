@@ -101,14 +101,24 @@ const Header = () => {
     <header className="sticky top-0 z-50 w-full bg-white shadow-md">
       <div className="container mx-auto px-4">
         <div className="flex h-20 items-center justify-between">
-          {/* Logo */}
-          <Link to="/" className="flex items-center">
-            <img 
-              src="/lovable-uploads/a78ac681-2089-42e4-8fc6-e3bbda2d5317.png" 
-              alt="Colégio Novos Tempos"
-              className="h-14"
-            />
-          </Link>
+          {/* Mobile Menu Button (Left) */}
+          <button
+            className="lg:hidden rounded-md p-2 text-gray-700 hover:bg-gray-100"
+            onClick={toggleMenu}
+          >
+            {isMenuOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
+          </button>
+          
+          {/* Logo (Centered) */}
+          <div className="flex-1 flex justify-center">
+            <Link to="/" className="flex items-center">
+              <img 
+                src="/lovable-uploads/a78ac681-2089-42e4-8fc6-e3bbda2d5317.png" 
+                alt="Colégio Novos Tempos"
+                className="h-16 object-contain" 
+              />
+            </Link>
+          </div>
 
           {/* Desktop Navigation */}
           <nav className="hidden lg:flex space-x-1">
@@ -171,14 +181,6 @@ const Header = () => {
               </Button>
             ))}
           </div>
-
-          {/* Mobile Menu Button */}
-          <button
-            className="lg:hidden rounded-md p-2 text-gray-700 hover:bg-gray-100"
-            onClick={toggleMenu}
-          >
-            {isMenuOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
-          </button>
         </div>
 
         {/* Mobile Menu */}
