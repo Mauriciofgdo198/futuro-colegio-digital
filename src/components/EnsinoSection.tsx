@@ -24,7 +24,7 @@ const EnsinoSection = () => {
       descricao: "Aprofundamos o conhecimento nas diversas áreas, desenvolvendo pensamento crítico e base científica.",
       icone: <GraduationCap className="h-10 w-10 text-colegio-amarelo" />,
       cor: "border-t-colegio-amarelo",
-      imagem: "https://photos.google.com/share/AF1QipOiaZlU6Ni97E9MP3ZJFukHZpGn-ttgGihTOPgppJjRA5BJw4dQVTnLFgCdWEZs1Q/photo/AF1QipNNhHiCN7cmArUBlIUbzc94p7U3RmTKdoXF7vUp?key=Zkh5Nm5QZDNsX3pxb3BvSTRtbFdFbmJhd184bkp3"
+      imagem: "https://lh3.googleusercontent.com/pw/AP1GczPnsNK5Oiahw05IhK1lmfspgGPgKs5YvIIQEgzIVRNWM317DJHaTUgpihEqsd4Q40Z_k5P1Em0tRRB78m6ko25a5J96FS7brY-6sUYqHIqwLy9k3vo_LvX8IRdPAjIJHos64SHi0GnazCp4geLUrO9O=w635-h953-s-no-gm?authuser=0"
     },
     {
       titulo: "Ensino Médio",
