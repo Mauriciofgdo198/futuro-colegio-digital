@@ -15,7 +15,7 @@ const Footer = () => {
   ];
 
   return (
-    <footer className="bg-[#151c33] text-white">
+    <footer className="py-12 bg-gradient-to-r from-colegio-azul via-colegio-azulClaro to-blue-400 text-white">
       <div className="container mx-auto px-4 py-8">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {/* Unidade Contagem */}
