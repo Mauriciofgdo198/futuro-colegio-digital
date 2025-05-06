@@ -24,7 +24,7 @@ const Footer = () => {
             <Separator className="bg-white/20" />
             <p className="flex items-start gap-2 text-sm">
               <MapPin className="h-5 w-5 mt-0.5 shrink-0" />
-              <span>Av. Prefeito Gil Diniz, 581 (Antigo 373) - Centro - Contagem / MG</span>
+              <span>Av. Prefeito Gil Diniz, 581 (Antigo 373), Centro, Contagem - MG</span>
             </p>
             <p className="flex items-center gap-2 text-sm">
               <Phone className="h-5 w-5 shrink-0" />
