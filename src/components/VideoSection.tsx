@@ -7,7 +7,7 @@ const VideoSection = () => {
   const [isVideoOpen, setIsVideoOpen] = useState(false);
   
   return (
-    <section className="py-16 bg-gray-50">
+    <section className="py-16 bg-gradient-to-r from-gray-50 to-blue-50">
       <div className="container mx-auto px-4">
         <h2 className="text-3xl md:text-4xl font-bold text-center mb-12 text-colegio-azul">
           Proposta Pedagógica
@@ -15,17 +15,17 @@ const VideoSection = () => {
         
         <div className="grid md:grid-cols-2 gap-10 items-center">
           {/* Video Container */}
-          <div className="relative aspect-video bg-gray-200 rounded-xl overflow-hidden shadow-xl">
+          <div className="relative aspect-video bg-gray-200 rounded-xl overflow-hidden shadow-xl cursor-pointer" onClick={() => setIsVideoOpen(true)}>
             {!isVideoOpen ? (
               <>
+                {/* Using actual YouTube thumbnail */}
                 <img 
-                  src="/lovable-uploads/cce8f5b4-4181-4efe-9b46-64d34968bbf5.png"
+                  src="https://img.youtube.com/vi/fJ83sXLEDKU/maxresdefault.jpg"
                   alt="Vídeo sobre proposta pedagógica"
                   className="w-full h-full object-cover"
                 />
                 <div className="absolute inset-0 bg-colegio-azul bg-opacity-40 flex items-center justify-center">
                   <Button 
-                    onClick={() => setIsVideoOpen(true)}
                     className="w-16 h-16 rounded-full bg-colegio-amarelo hover:bg-colegio-amareloClaro text-colegio-azul flex items-center justify-center group transition-all duration-300"
                   >
                     <Play className="h-8 w-8 group-hover:scale-110 transition-transform" />
@@ -72,13 +72,6 @@ const VideoSection = () => {
               Combinamos tradição e inovação em nossos métodos de ensino, preparando os estudantes 
               para os desafios do futuro com uma formação sólida e abrangente.
             </p>
-            <Button 
-              onClick={() => setIsVideoOpen(true)}
-              className="bg-colegio-amarelo text-colegio-azul hover:bg-colegio-amareloClaro mt-4 rounded-full font-bold"
-            >
-              <Play className="mr-2 h-4 w-4" />
-              Assistir vídeo completo
-            </Button>
           </div>
         </div>
       </div>

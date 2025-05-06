@@ -4,6 +4,7 @@ import Hero from "@/components/Hero";
 import EnsinoSection from "@/components/EnsinoSection";
 import VideoSection from "@/components/VideoSection";
 import DestaqueSection from "@/components/DestaqueSection";
+import SocialBanner from "@/components/SocialBanner";
 import Footer from "@/components/Footer";
 import WhatsAppButton from "@/components/WhatsAppButton";
 
@@ -16,6 +17,7 @@ const Index = () => {
         <EnsinoSection />
         <VideoSection />
         <DestaqueSection />
+        <SocialBanner />
       </main>
       <Footer />
       <WhatsAppButton />

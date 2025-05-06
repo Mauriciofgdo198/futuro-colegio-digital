@@ -20,7 +20,7 @@ const Hero = () => {
             </p>
             <div className="flex flex-wrap gap-4">
               <Button asChild className="bg-colegio-amarelo text-colegio-azul hover:bg-colegio-amareloClaro rounded-full text-lg font-bold px-6">
-                <Link to="/matriculas">Matricule-se</Link>
+                <a href="https://contagem.ient.com.br/matricula" target="_blank" rel="noopener noreferrer">Matricule-se</a>
               </Button>
               <Button asChild variant="outline" className="bg-transparent border-white text-white hover:bg-white/10 rounded-full text-lg font-bold px-6">
                 <Link to="/ensinos">Conheça nossos cursos</Link>
@@ -36,9 +36,6 @@ const Hero = () => {
                   className="w-full h-full object-cover"
                 />
               </div>
-            </div>
-            <div className="absolute -top-6 -right-6 w-24 h-24 bg-colegio-amarelo rounded-full flex items-center justify-center shadow-lg">
-              <span className="text-colegio-azul font-bold text-lg text-center leading-tight">Desde 1985</span>
             </div>
           </div>
         </div>
