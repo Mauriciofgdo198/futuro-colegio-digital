@@ -1,6 +1,6 @@
 
 import { Button } from "@/components/ui/button";
-import { Facebook, Instagram, Youtube, Twitter, TiktokIcon } from "lucide-react";
+import { Facebook, Instagram, Youtube, Twitter } from "lucide-react";
 
 const SocialBanner = () => {
   return (

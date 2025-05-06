@@ -1,7 +1,6 @@
 
 import { ArrowRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import { Link } from "react-router-dom";
 import { useEffect, useState } from "react";
 
 type InstagramPost = {
@@ -38,7 +37,7 @@ const DestaqueSection = () => {
       <div className="container mx-auto px-4">
         <div className="flex flex-wrap items-center justify-between mb-10">
           <div>
-            <h2 className="text-3xl md:text-4xl font-bold text-colegio-azul mb-2">Instagram</h2>
+            <h2 className="text-3xl md:text-4xl font-bold text-colegio-azul mb-2">Notícias</h2>
             <p className="text-gray-600">Acompanhe nossas últimas publicações</p>
           </div>
           <Button asChild variant="outline" className="mt-4 md:mt-0 border-colegio-azul text-colegio-azul hover:bg-colegio-azul hover:text-white rounded-full">
@@ -48,7 +47,7 @@ const DestaqueSection = () => {
               rel="noopener noreferrer"
               className="inline-flex items-center"
             >
-              Ver perfil completo <ArrowRight className="ml-2 h-4 w-4" />
+              Ver todas as notícias <ArrowRight className="ml-2 h-4 w-4" />
             </a>
           </Button>
         </div>
@@ -65,7 +64,7 @@ const DestaqueSection = () => {
                 <div className="aspect-square overflow-hidden">
                   <img 
                     src={post.image} 
-                    alt={`Instagram post ${index + 1}`} 
+                    alt={`Notícia ${index + 1}`} 
                     className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
                   />
                 </div>
@@ -79,7 +78,7 @@ const DestaqueSection = () => {
                   <div 
                     className="inline-flex items-center text-colegio-azul font-medium hover:text-colegio-azulClaro transition-colors"
                   >
-                    Ver no Instagram <ArrowRight className="ml-1 h-4 w-4" />
+                    Ver notícia completa <ArrowRight className="ml-1 h-4 w-4" />
                   </div>
                 </div>
               </a>
