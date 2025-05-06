@@ -1,17 +1,17 @@
 
 import { Link } from "react-router-dom";
-import { MapPin, Phone, Mail, Briefcase, Smartphone, Apple } from "lucide-react";
+import { MapPin, Phone, Mail, Briefcase, Download } from "lucide-react";
 import { Separator } from "@/components/ui/separator";
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
   
   const socialLinks = [
-    { name: "Facebook", href: "https://facebook.com", icon: "facebook" },
-    { name: "Instagram", href: "https://instagram.com", icon: "instagram" },
-    { name: "Youtube", href: "https://youtube.com", icon: "youtube" },
-    { name: "Twitter", href: "https://twitter.com/", icon: "twitter" },
-    { name: "TikTok", href: "https://tiktok.com", icon: "tiktok" },
+    { name: "Facebook", href: "https://web.facebook.com/ColegioNovosTempos/?locale=pt_BR&_rdc=1&_rdr#", icon: "facebook" },
+    { name: "Instagram", href: "https://www.instagram.com/colegionovostempos/", icon: "instagram" },
+    { name: "Youtube", href: "https://www.youtube.com/c/Col%C3%A9gioNovosTemposContagem", icon: "youtube" },
+    { name: "Twitter", href: "https://x.com/novos_tempos", icon: "twitter" },
+    { name: "TikTok", href: "https://www.tiktok.com/@colegionovostempos", icon: "tiktok" },
   ];
 
   return (
@@ -131,24 +131,11 @@ const Footer = () => {
               
               <div className="flex space-x-4 items-center">
                 <a 
-                  href="https://play.google.com/store" 
+                  href="https://play.google.com/store/apps/details?id=education.layers.sophiabylayers&hl=en_US&pli=1" 
                   target="_blank" 
                   rel="noopener noreferrer"
                   className="hover:opacity-80 transition-opacity"
-                >
-                  <Smartphone className="h-8 w-8" />
-                </a>
-                <a 
-                  href="https://apple.com/app-store" 
-                  target="_blank" 
-                  rel="noopener noreferrer"
-                  className="hover:opacity-80 transition-opacity"
-                >
-                  <Apple className="h-8 w-8" />
-                </a>
-                <a 
-                  href="/app" 
-                  className="hover:opacity-80 transition-opacity"
+                  aria-label="Download na Google Play Store"
                 >
                   <svg 
                     xmlns="http://www.w3.org/2000/svg" 
@@ -161,10 +148,43 @@ const Footer = () => {
                     strokeLinecap="round" 
                     strokeLinejoin="round"
                   >
-                    <rect x="2" y="4" width="20" height="16" rx="2" />
-                    <rect x="8" y="2" width="8" height="4" rx="1" />
-                    <path d="M10 10.5a1 1 0 1 1-1-1c4 0 4 6 8 6a1 1 0 1 1 1 1" />
+                    <path d="m3 6 7.89 5.26a2 2 0 0 0 2.22 0L21 6" />
+                    <path d="M5.6 4.2 12 10l6.4-5.8a1.98 1.98 0 0 0-1.15-.6h-10.5a1.98 1.98 0 0 0-1.15.6Z" />
+                    <path d="M21 6v12a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V6" />
+                    <path d="m3 6 8 7" />
+                    <path d="m21 6-8 7" />
                   </svg>
+                </a>
+                <a 
+                  href="https://apps.apple.com/br/app/sophia-by-layers/id6443421620" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="hover:opacity-80 transition-opacity"
+                  aria-label="Download na Apple App Store"
+                >
+                  <svg 
+                    xmlns="http://www.w3.org/2000/svg" 
+                    width="32" 
+                    height="32" 
+                    viewBox="0 0 24 24" 
+                    fill="none" 
+                    stroke="currentColor" 
+                    strokeWidth="2" 
+                    strokeLinecap="round" 
+                    strokeLinejoin="round"
+                  >
+                    <path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10z" />
+                    <path d="M14.41 8.41 12 10.83m0 0-2.41-2.41m2.41 2.41V6m-8 6h2m14 0h-2m-7 4v2" />
+                  </svg>
+                </a>
+                <a 
+                  href="https://id.layers.digital/sign-in" 
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="hover:opacity-80 transition-opacity"
+                  aria-label="Acessar site"
+                >
+                  <Download className="h-8 w-8" />
                 </a>
               </div>
             </div>

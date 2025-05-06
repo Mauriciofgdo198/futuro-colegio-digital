@@ -10,35 +10,35 @@ const EnsinoSection = () => {
       descricao: "Desenvolvemos as habilidades cognitivas, motoras e socioemocionais com atividades lúdicas e estimulantes.",
       icone: <Star className="h-10 w-10 text-colegio-amarelo" />,
       cor: "border-t-colegio-amarelo",
-      imagem: "/placeholder.svg"
+      imagem: "https://images.unsplash.com/photo-1544087759-3bc3872ab90e?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
     },
     {
       titulo: "Ensino Fundamental I",
       descricao: "Consolidamos a alfabetização e o raciocínio lógico, promovendo autonomia e consciência social.",
       icone: <GraduationCap className="h-10 w-10 text-colegio-azul" />,
       cor: "border-t-colegio-azul",
-      imagem: "/placeholder.svg"
+      imagem: "https://images.unsplash.com/photo-1610484826967-09c5720778c7?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
     },
     {
       titulo: "Ensino Fundamental II",
       descricao: "Aprofundamos o conhecimento nas diversas áreas, desenvolvendo pensamento crítico e base científica.",
       icone: <GraduationCap className="h-10 w-10 text-colegio-azul" />,
       cor: "border-t-colegio-azul",
-      imagem: "/placeholder.svg"
+      imagem: "https://images.unsplash.com/photo-1509869175650-a1d97972541a?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
     },
     {
       titulo: "Ensino Médio",
       descricao: "Preparamos para o Enem e vestibulares com metodologia avançada e foco no projeto de vida do aluno.",
       icone: <GraduationCap className="h-10 w-10 text-colegio-azul" />,
       cor: "border-t-colegio-azul",
-      imagem: "/placeholder.svg"
+      imagem: "https://images.unsplash.com/photo-1523240795612-9a054b0db644?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
     },
     {
       titulo: "Período Integral",
       descricao: "Oferecemos atividades extracurriculares, acompanhamento de tarefas e projetos complementares.",
       icone: <Clock className="h-10 w-10 text-colegio-amarelo" />,
       cor: "border-t-colegio-amarelo",
-      imagem: "/placeholder.svg"
+      imagem: "https://images.unsplash.com/photo-1543269664-56d93c1b41a6?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
     }
   ];
 
