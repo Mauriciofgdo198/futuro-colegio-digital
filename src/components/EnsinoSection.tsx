@@ -10,7 +10,7 @@ const EnsinoSection = () => {
       descricao: "Desenvolvemos as habilidades cognitivas, motoras e socioemocionais com atividades lúdicas e estimulantes.",
       icone: <Star className="h-10 w-10 text-colegio-amarelo" />,
       cor: "border-t-colegio-amarelo",
-      imagem: "https://images.unsplash.com/photo-1544087759-3bc3872ab90e?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+      imagem: "https://www.cocvilayara.com.br/blog/img/blog-entenda-porque-a-escola-e-tao-importante-no-processo-de-socializacao-das-criancas.jpg"
     },
     {
       titulo: "Ensino Fundamental I",
