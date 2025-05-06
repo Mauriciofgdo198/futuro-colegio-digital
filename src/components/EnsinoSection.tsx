@@ -23,7 +23,7 @@ const EnsinoSection = () => {
       titulo: "Ensino Fundamental II",
       descricao: "Aprofundamos o conhecimento nas diversas áreas, desenvolvendo pensamento crítico e base científica.",
       icone: <GraduationCap className="h-10 w-10 text-colegio-amarelo" />,
-      cor: "h-10 w-10 text-colegio-amarelo",
+      cor: "border-t-colegio-amarelo",
       imagem: "https://images.unsplash.com/photo-1509869175650-a1d97972541a?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
     },
     {
