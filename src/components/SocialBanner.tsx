@@ -7,7 +7,7 @@ const SocialBanner = () => {
     <section className="py-12 bg-gradient-to-r from-colegio-azul via-colegio-azulClaro to-blue-400 text-white">
       <div className="container mx-auto px-4 text-center">
         <h2 className="text-3xl md:text-4xl font-bold mb-8">
-          NÃO DEIXE DE CONFERIR NOSSAS REDES SOCIAIS, ACESSE E CONFIRA
+          Não deixe de conferir nossas redes sociais, acesse e confira
         </h2>
         
         <div className="flex flex-wrap justify-center gap-6">
