@@ -100,7 +100,7 @@ const Header = () => {
   return (
     <header className="sticky top-0 z-50 w-full bg-white shadow-md">
       <div className="container mx-auto px-4">
-        <div className="flex h-24 items-center justify-between">
+        <div className="flex h-28 items-center justify-between">
           {/* Mobile Menu Button (Left) */}
           <button
             className="lg:hidden rounded-md p-2 text-gray-700 hover:bg-gray-100"
@@ -115,7 +115,7 @@ const Header = () => {
               <img 
                 src="/lovable-uploads/a78ac681-2089-42e4-8fc6-e3bbda2d5317.png" 
                 alt="Colégio Novos Tempos"
-                className="h-16 object-contain" 
+                className="h-26 object-contain" 
               />
             </Link>
           </div>
