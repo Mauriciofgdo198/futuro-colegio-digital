@@ -115,7 +115,7 @@ const Header = () => {
               <img 
                 src="/lovable-uploads/a78ac681-2089-42e4-8fc6-e3bbda2d5317.png" 
                 alt="Colégio Novos Tempos"
-                className="h-26 object-contain" 
+                className="h-22 object-contain" 
               />
             </Link>
           </div>
