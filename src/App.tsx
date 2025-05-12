@@ -14,6 +14,9 @@ import ValoresInstituto from "./pages/sobre/ValoresInstituto";
 import Lient from "./pages/sobre/Lient";
 import Missao from "./pages/sobre/Missao";
 
+// Projetos pages
+import EnemVestibular from "./pages/projetos/EnemVestibular";
+
 const queryClient = new QueryClient();
 
 const App = () => (
@@ -33,7 +36,7 @@ const App = () => (
           <Route path="/sobre/missao" element={<Missao />} />
           
           <Route path="/projetos" element={<Placeholder />} />
-          <Route path="/projetos/enem-vestibular" element={<Placeholder />} />
+          <Route path="/projetos/enem-vestibular" element={<EnemVestibular />} />
           <Route path="/projetos/nossos-projetos" element={<Placeholder />} />
           
           <Route path="/unidades" element={<Placeholder />} />
