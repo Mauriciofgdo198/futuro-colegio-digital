@@ -1,6 +1,7 @@
 
 import Header from "@/components/Header";
 import Hero from "@/components/Hero";
+import MatriculaBanner from "@/components/MatriculaBanner";
 import EnsinoSection from "@/components/EnsinoSection";
 import VideoSection from "@/components/VideoSection";
 import DestaqueSection from "@/components/DestaqueSection";
@@ -15,6 +16,7 @@ const Index = () => {
       <Header />
       <main className="flex-grow">
         <Hero />
+        <MatriculaBanner />
         <EnsinoSection />
         <VideoSection />
         <DestaqueSection />
