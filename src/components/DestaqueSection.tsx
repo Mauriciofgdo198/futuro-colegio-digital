@@ -1,47 +1,47 @@
 
 import { ArrowRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import { useEffect, useState } from "react";
-
-type InstagramPost = {
-  image: string;
-  username: string;
-  caption: string;
-  link: string;
-  timestamp: string;
-};
+import { useEffect, useState, useRef } from "react";
 
 const DestaqueSection = () => {
-  const [posts, setPosts] = useState<InstagramPost[]>([
-    {
-      image: "https://images.unsplash.com/photo-1609924211018-5526c55bad5b?q=80&w=1374&auto=format&fit=crop",
-      username: "colegionovostempos",
-      caption: "Nossos alunos do 5º ano apresentando seus projetos de ciências na feira anual! Estamos orgulhosos do trabalho e dedicação de cada um. #EducaçãoDeQualidade #FeiraDeCiências",
-      link: "https://www.instagram.com/p/reel-1/",
-      timestamp: "1 dia atrás"
-    },
-    {
-      image: "https://images.unsplash.com/photo-1610484826967-09c5720778c7?q=80&w=1470&auto=format&fit=crop",
-      username: "colegionovostempos",
-      caption: "Hoje foi dia de atividade especial com nossa turma do Ensino Fundamental! Aprendendo matemática de forma divertida e interativa. #EducaçãoCriativa #MatematicaÉDiversao",
-      link: "https://www.instagram.com/p/reel-2/",
-      timestamp: "3 dias atrás"
-    },
-    {
-      image: "https://images.unsplash.com/photo-1629872430082-93d8912beccf?q=80&w=1372&auto=format&fit=crop",
-      username: "colegionovostempos",
-      caption: "Celebrando a semana da literatura brasileira com apresentações incríveis dos nossos alunos do Ensino Médio! #LiteraturaBrasileira #EducaçãoQueTransforma",
-      link: "https://www.instagram.com/p/reel-3/",
-      timestamp: "5 dias atrás"
-    },
-    {
-      image: "https://images.unsplash.com/photo-1607453998774-d533f65dac99?q=80&w=1374&auto=format&fit=crop",
-      username: "colegionovostempos",
-      caption: "Compartilhando momentos da nossa olimpíada de conhecimento realizada na última semana. Parabenizamos todos os participantes pelo empenho e dedicação! #OlimpíadaDeConhecimento #Educação",
-      link: "https://www.instagram.com/p/reel-4/",
-      timestamp: "1 semana atrás"
-    }
-  ]);
+  const instagramRef = useRef<HTMLDivElement>(null);
+  
+  useEffect(() => {
+    // Função para carregar o script do Instagram
+    const loadInstagramWidget = () => {
+      // Remover qualquer script anterior caso exista
+      const existingScript = document.getElementById('instagram-embed-script');
+      if (existingScript) {
+        existingScript.remove();
+      }
+
+      // Criar novo script
+      const script = document.createElement('script');
+      script.id = 'instagram-embed-script';
+      script.src = '//www.instagram.com/embed.js';
+      script.async = true;
+      script.defer = true;
+      
+      // Adicionar o script ao documento
+      document.body.appendChild(script);
+
+      // Reprocessar widgets quando o script estiver carregado
+      script.onload = () => {
+        if (window.instgrm) {
+          window.instgrm.Embeds.process();
+        }
+      };
+    };
+
+    // Carregar o widget quando o componente montar
+    loadInstagramWidget();
+
+    // Configurar atualização periódica (a cada 30 minutos)
+    const refreshInterval = setInterval(loadInstagramWidget, 30 * 60 * 1000);
+
+    // Limpar o intervalo quando o componente desmontar
+    return () => clearInterval(refreshInterval);
+  }, []);
 
   return (
     <section className="py-16 bg-gray-50">
@@ -49,65 +49,113 @@ const DestaqueSection = () => {
         <div className="flex flex-wrap items-center justify-between mb-10">
           <div>
             <h2 className="text-3xl md:text-4xl font-bold text-colegio-azul mb-2">Instagram</h2>
-            <p className="text-gray-600">Acompanhe nossos últimos reels</p>
+            <p className="text-gray-600">Acompanhe nossas últimas publicações</p>
           </div>
           <Button asChild variant="outline" className="mt-4 md:mt-0 border-colegio-azul text-colegio-azul hover:bg-colegio-azul hover:text-white rounded-full">
             <a 
-              href="https://www.instagram.com/colegionovostempos/reels/" 
+              href="https://www.instagram.com/colegionovostempos/"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center"
             >
-              Ver todos os reels <ArrowRight className="ml-2 h-4 w-4" />
+              Ver todas as publicações <ArrowRight className="ml-2 h-4 w-4" />
             </a>
           </Button>
         </div>
         
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-          {posts.map((post, index) => (
-            <div key={index} className="group rounded-xl overflow-hidden bg-white shadow-md hover:shadow-lg transition-shadow">
-              <a 
-                href={post.link} 
-                target="_blank" 
-                rel="noopener noreferrer" 
-                className="block"
-              >
-                <div className="aspect-video overflow-hidden relative">
-                  <img 
-                    src={post.image} 
-                    alt={`Instagram Reel ${index + 1}`} 
-                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
-                  />
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex items-end">
-                    <div className="p-4 text-white">
-                      <p className="font-bold">@{post.username}</p>
-                    </div>
-                  </div>
-                </div>
-                <div className="p-4">
-                  <div className="flex items-center space-x-2 mb-2">
-                    <div className="w-6 h-6 rounded-full bg-gradient-to-tr from-yellow-400 via-red-500 to-purple-600 flex items-center justify-center">
-                      <div className="w-5 h-5 rounded-full bg-white flex items-center justify-center">
-                        <div className="w-4 h-4 rounded-full bg-gradient-to-tr from-yellow-400 via-red-500 to-purple-600"></div>
-                      </div>
-                    </div>
-                    <span className="text-sm font-medium">Reels</span>
-                    <span className="text-xs text-gray-500">{post.timestamp}</span>
-                  </div>
-                  <p className="text-gray-600 text-sm line-clamp-3 mb-3">
-                    {post.caption}
-                  </p>
-                  <div className="inline-flex items-center text-sm text-colegio-azul font-medium hover:text-colegio-azulClaro transition-colors">
-                    Ver no Instagram <ArrowRight className="ml-1 h-3 w-3" />
-                  </div>
-                </div>
-              </a>
-            </div>
-          ))}
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6" ref={instagramRef}>
+          {/* Widget do Instagram embebido */}
+          <div className="instagram-post">
+            <blockquote 
+              className="instagram-media" 
+              data-instgrm-permalink="https://www.instagram.com/colegionovostempos/p/recent/?utm_source=ig_embed&utm_campaign=loading" 
+              data-instgrm-version="14"
+              style={{
+                background: '#FFF',
+                border: '0',
+                borderRadius: '3px',
+                boxShadow: '0 0 1px 0 rgba(0,0,0,0.5), 0 1px 10px 0 rgba(0,0,0,0.15)',
+                margin: '1px',
+                maxWidth: '540px',
+                minWidth: '326px',
+                padding: '0',
+                width: '99.375%'
+              }}
+            >
+            </blockquote>
+          </div>
+          <div className="instagram-post">
+            <blockquote 
+              className="instagram-media" 
+              data-instgrm-permalink="https://www.instagram.com/p/recent/?utm_source=ig_embed&utm_campaign=loading" 
+              data-instgrm-version="14"
+              style={{
+                background: '#FFF',
+                border: '0',
+                borderRadius: '3px',
+                boxShadow: '0 0 1px 0 rgba(0,0,0,0.5), 0 1px 10px 0 rgba(0,0,0,0.15)',
+                margin: '1px',
+                maxWidth: '540px',
+                minWidth: '326px',
+                padding: '0',
+                width: '99.375%'
+              }}
+            >
+            </blockquote>
+          </div>
+          <div className="instagram-post">
+            <blockquote 
+              className="instagram-media" 
+              data-instgrm-permalink="https://www.instagram.com/colegionovostempos/p/recent/?utm_source=ig_embed&utm_campaign=loading" 
+              data-instgrm-version="14"
+              style={{
+                background: '#FFF',
+                border: '0',
+                borderRadius: '3px',
+                boxShadow: '0 0 1px 0 rgba(0,0,0,0.5), 0 1px 10px 0 rgba(0,0,0,0.15)',
+                margin: '1px',
+                maxWidth: '540px',
+                minWidth: '326px',
+                padding: '0',
+                width: '99.375%'
+              }}
+            >
+            </blockquote>
+          </div>
+          <div className="instagram-post">
+            <blockquote 
+              className="instagram-media" 
+              data-instgrm-permalink="https://www.instagram.com/colegionovostempos/p/recent/?utm_source=ig_embed&utm_campaign=loading" 
+              data-instgrm-version="14"
+              style={{
+                background: '#FFF',
+                border: '0',
+                borderRadius: '3px',
+                boxShadow: '0 0 1px 0 rgba(0,0,0,0.5), 0 1px 10px 0 rgba(0,0,0,0.15)',
+                margin: '1px',
+                maxWidth: '540px',
+                minWidth: '326px',
+                padding: '0',
+                width: '99.375%'
+              }}
+            >
+            </blockquote>
+          </div>
         </div>
       </div>
     </section>
   );
 };
+
+// Adicionar a definição para o objeto instgrm no window
+declare global {
+  interface Window {
+    instgrm?: {
+      Embeds: {
+        process: () => void;
+      };
+    };
+  }
+}
 
 export default DestaqueSection;
