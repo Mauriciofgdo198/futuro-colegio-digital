@@ -2,6 +2,13 @@
 import { ArrowRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { useEffect, useState } from "react";
+import { 
+  Carousel, 
+  CarouselContent, 
+  CarouselItem, 
+  CarouselPrevious, 
+  CarouselNext 
+} from "@/components/ui/carousel";
 
 type InstagramPost = {
   image: string;
@@ -44,66 +51,108 @@ const DestaqueSection = () => {
   ]);
 
   return (
-    <section className="py-16 bg-gray-50">
+    <section className="py-16 bg-[#f9f9f9]">
       <div className="container mx-auto px-4">
         <div className="flex flex-wrap items-center justify-between mb-10">
           <div>
-            <h2 className="text-3xl md:text-4xl font-bold text-colegio-azul mb-2">Instagram</h2>
-            <p className="text-gray-600">Acompanhe nossos últimos reels</p>
+            <h2 className="text-3xl md:text-4xl font-bold text-zinc-800 mb-2">
+              Confira nossos últimos momentos no <em className="font-serif italic not-italic">Instagram</em>
+            </h2>
+            <div className="h-1 w-16 bg-colegio-azul mb-2"></div>
           </div>
-          <Button asChild variant="outline" className="mt-4 md:mt-0 border-colegio-azul text-colegio-azul hover:bg-colegio-azul hover:text-white rounded-full">
+          
+          <div className="hidden md:flex items-center text-pink-600">
             <a 
-              href="https://www.instagram.com/colegionovostempos/reels/" 
+              href="https://www.instagram.com/colegionovostempos/" 
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center"
+              className="flex items-center text-sm font-medium"
             >
-              Ver todos os reels <ArrowRight className="ml-2 h-4 w-4" />
+              @colegionovostempos
             </a>
-          </Button>
+          </div>
         </div>
         
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-          {posts.map((post, index) => (
-            <div key={index} className="group rounded-xl overflow-hidden bg-white shadow-md hover:shadow-lg transition-shadow">
-              <a 
-                href={post.link} 
-                target="_blank" 
-                rel="noopener noreferrer" 
-                className="block"
+        <div className="relative">
+          {/* Versão desktop: grid 2x2 */}
+          <div className="hidden md:grid grid-cols-4 gap-5">
+            {posts.map((post, index) => (
+              <a
+                key={index}
+                href={post.link}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="group block bg-white rounded-lg overflow-hidden shadow-sm hover:shadow-md transition-all"
               >
-                <div className="aspect-video overflow-hidden relative">
-                  <img 
-                    src={post.image} 
-                    alt={`Instagram Reel ${index + 1}`} 
+                <div className="aspect-square overflow-hidden">
+                  <img
+                    src={post.image}
+                    alt={`Instagram post ${index + 1}`}
                     className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
                   />
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex items-end">
-                    <div className="p-4 text-white">
-                      <p className="font-bold">@{post.username}</p>
-                    </div>
-                  </div>
                 </div>
                 <div className="p-4">
-                  <div className="flex items-center space-x-2 mb-2">
-                    <div className="w-6 h-6 rounded-full bg-gradient-to-tr from-yellow-400 via-red-500 to-purple-600 flex items-center justify-center">
-                      <div className="w-5 h-5 rounded-full bg-white flex items-center justify-center">
-                        <div className="w-4 h-4 rounded-full bg-gradient-to-tr from-yellow-400 via-red-500 to-purple-600"></div>
-                      </div>
-                    </div>
-                    <span className="text-sm font-medium">Reels</span>
-                    <span className="text-xs text-gray-500">{post.timestamp}</span>
-                  </div>
-                  <p className="text-gray-600 text-sm line-clamp-3 mb-3">
-                    {post.caption}
+                  <p className="text-sm text-gray-600 line-clamp-2 mb-2 group-hover:text-colegio-azul transition-colors">
+                    {post.caption.substring(0, 120)}
+                    {post.caption.length > 120 ? '...' : ''}
                   </p>
-                  <div className="inline-flex items-center text-sm text-colegio-azul font-medium hover:text-colegio-azulClaro transition-colors">
-                    Ver no Instagram <ArrowRight className="ml-1 h-3 w-3" />
-                  </div>
                 </div>
               </a>
-            </div>
-          ))}
+            ))}
+          </div>
+          
+          {/* Versão mobile: carrossel */}
+          <div className="md:hidden">
+            <Carousel
+              opts={{
+                align: "start",
+                loop: true,
+              }}
+              className="w-full"
+            >
+              <CarouselContent>
+                {posts.map((post, index) => (
+                  <CarouselItem key={index} className="md:basis-1/2 lg:basis-1/3">
+                    <a
+                      href={post.link}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="group block bg-white rounded-lg overflow-hidden shadow-sm hover:shadow-md transition-all h-full"
+                    >
+                      <div className="aspect-square overflow-hidden">
+                        <img
+                          src={post.image}
+                          alt={`Instagram post ${index + 1}`}
+                          className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                        />
+                      </div>
+                      <div className="p-4">
+                        <p className="text-sm text-gray-600 line-clamp-2 mb-2 group-hover:text-colegio-azul transition-colors">
+                          {post.caption.substring(0, 120)}
+                          {post.caption.length > 120 ? '...' : ''}
+                        </p>
+                      </div>
+                    </a>
+                  </CarouselItem>
+                ))}
+              </CarouselContent>
+              <CarouselPrevious className="left-2" />
+              <CarouselNext className="right-2" />
+            </Carousel>
+          </div>
+          
+          <div className="mt-8 text-center">
+            <Button asChild variant="outline" className="rounded-full border-colegio-azul text-colegio-azul hover:bg-colegio-azul hover:text-white">
+              <a 
+                href="https://www.instagram.com/colegionovostempos/" 
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center px-6"
+              >
+                Veja mais no Instagram <ArrowRight className="ml-2 h-4 w-4" />
+              </a>
+            </Button>
+          </div>
         </div>
       </div>
     </section>
