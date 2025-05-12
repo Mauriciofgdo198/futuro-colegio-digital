@@ -134,7 +134,7 @@ const Header = () => {
                         </span>
                       </NavigationMenuTrigger>
                       <NavigationMenuContent>
-                        <ul className="grid w-[200px] gap-1 p-2 absolute top-full">
+                        <ul className="grid w-[200px] gap-1 p-2">
                           {item.subitems.map((subitem) => (
                             <li key={subitem.name}>
                               <NavigationMenuLink asChild>
