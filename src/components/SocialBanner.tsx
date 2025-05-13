@@ -4,7 +4,7 @@ import { Facebook, Instagram, Youtube, Twitter } from "lucide-react";
 
 const SocialBanner = () => {
   return (
-    <section className="py-12 bg-gradient-to-r from-colegio-azul via-colegio-azulClaro to-blue-400 text-white">
+    <section className="py-12 bg-colegio-amarelo text-colegio-azul">
       <div className="container mx-auto px-4 text-center">
         <h2 className="text-3xl md:text-4xl font-bold mb-8">
           Não deixe de conferir nossas redes sociais, acesse e confira
@@ -13,7 +13,7 @@ const SocialBanner = () => {
         <div className="flex flex-wrap justify-center gap-6">
           <Button 
             asChild
-            className="bg-white text-colegio-azul hover:bg-gray-100 rounded-full text-lg font-bold px-8 py-6"
+            className="bg-colegio-amarelo text-colegio-azul hover:bg-gray-100 rounded-full text-lg font-bold px-8 py-6"
           >
             <a href="https://web.facebook.com/ColegioNovosTempos/?locale=pt_BR&_rdc=1&_rdr#" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2">
               <Facebook className="h-6 w-6" />
@@ -23,7 +23,7 @@ const SocialBanner = () => {
           
           <Button 
             asChild
-            className="bg-white text-colegio-azul hover:bg-gray-100 rounded-full text-lg font-bold px-8 py-6"
+            className="bg-colegio-amarelo text-colegio-azul hover:bg-gray-100 rounded-full text-lg font-bold px-8 py-6"
           >
             <a href="https://www.instagram.com/colegionovostempos/" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2">
               <Instagram className="h-6 w-6" />
@@ -33,7 +33,7 @@ const SocialBanner = () => {
           
           <Button 
             asChild
-            className="bg-white text-colegio-azul hover:bg-gray-100 rounded-full text-lg font-bold px-8 py-6"
+            className="bg-colegio-amarelo text-colegio-azul hover:bg-gray-100 rounded-full text-lg font-bold px-8 py-6"
           >
             <a href="https://www.youtube.com/c/Col%C3%A9gioNovosTemposContagem" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2">
               <Youtube className="h-6 w-6" />
@@ -43,7 +43,7 @@ const SocialBanner = () => {
 
           <Button 
             asChild
-            className="bg-white text-colegio-azul hover:bg-gray-100 rounded-full text-lg font-bold px-8 py-6"
+            className="bg-colegio-amarelo text-colegio-azul hover:bg-gray-100 rounded-full text-lg font-bold px-8 py-6"
           >
             <a href="https://x.com/novos_tempos" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2">
               <Twitter className="h-6 w-6" />
@@ -53,7 +53,7 @@ const SocialBanner = () => {
 
           <Button 
             asChild
-            className="bg-white text-colegio-azul hover:bg-gray-100 rounded-full text-lg font-bold px-8 py-6"
+            className="bg-colegio-amarelo text-colegio-azul hover:bg-gray-100 rounded-full text-lg font-bold px-8 py-6"
           >
             <a href="https://www.tiktok.com/@colegionovostempos" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2">
               <svg 
