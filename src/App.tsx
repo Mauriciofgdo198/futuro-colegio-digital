@@ -16,6 +16,7 @@ import Missao from "./pages/sobre/Missao";
 
 // Projetos pages
 import EnemVestibular from "./pages/projetos/EnemVestibular";
+import NossosProjetos from "./pages/projetos/NossosProjetos";
 
 // Contato page
 import Contato from "./pages/contato/Contato";
@@ -40,7 +41,7 @@ const App = () => (
           
           <Route path="/projetos" element={<Placeholder />} />
           <Route path="/projetos/enem-vestibular" element={<EnemVestibular />} />
-          <Route path="/projetos/nossos-projetos" element={<Placeholder />} />
+          <Route path="/projetos/nossos-projetos" element={<NossosProjetos />} />
           
           <Route path="/unidades" element={<Placeholder />} />
           <Route path="/unidades/contagem" element={<Placeholder />} />
