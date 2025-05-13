@@ -7,6 +7,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Index from "./pages/Index";
 import Placeholder from "./pages/Placeholder";
 import NotFound from "./pages/NotFound";
+import Estrutura from "./pages/Estrutura";
 
 // Sobre nós pages
 import QuemSomos from "./pages/sobre/QuemSomos";
@@ -54,7 +55,7 @@ const App = () => (
           <Route path="/ensinos/medio" element={<Placeholder />} />
           <Route path="/ensinos/integral" element={<Placeholder />} />
           
-          <Route path="/estrutura" element={<Placeholder />} />
+          <Route path="/estrutura" element={<Estrutura />} />
           <Route path="/noticias" element={<Placeholder />} />
           <Route path="/galerias" element={<Placeholder />} />
           <Route path="/contato" element={<Contato />} />
