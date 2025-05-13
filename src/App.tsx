@@ -17,6 +17,9 @@ import Missao from "./pages/sobre/Missao";
 // Projetos pages
 import EnemVestibular from "./pages/projetos/EnemVestibular";
 
+// Contato page
+import Contato from "./pages/contato/Contato";
+
 const queryClient = new QueryClient();
 
 const App = () => (
@@ -53,7 +56,7 @@ const App = () => (
           <Route path="/estrutura" element={<Placeholder />} />
           <Route path="/noticias" element={<Placeholder />} />
           <Route path="/galerias" element={<Placeholder />} />
-          <Route path="/contato" element={<Placeholder />} />
+          <Route path="/contato" element={<Contato />} />
           
           {/* Páginas de ação */}
           <Route path="/matriculas" element={<Placeholder />} />
