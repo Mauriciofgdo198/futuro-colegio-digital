@@ -16,7 +16,8 @@ import {
   Smartphone, 
   LogIn, 
   X, 
-  ChevronDown, 
+  ChevronDown,
+  ChevronUp,
   Phone,
   Facebook,
   Instagram,
@@ -33,25 +34,51 @@ import {
 } from "@/components/ui/navigation-menu";
 
 import { 
-  DropdownMenu, 
-  DropdownMenuContent, 
-  DropdownMenuItem, 
-  DropdownMenuTrigger 
-} from "@/components/ui/dropdown-menu";
+  Collapsible,
+  CollapsibleContent,
+  CollapsibleTrigger
+} from "@/components/ui/collapsible";
 
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
 import { useMediaQuery } from "@/hooks/use-mobile";
 
+// Define types for menu items
+interface SubItem {
+  name: string;
+  href: string;
+}
+
+interface NavItem {
+  name: string;
+  icon: React.ReactNode;
+  href: string;
+  subitems?: SubItem[];
+}
+
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [openMobileItems, setOpenMobileItems] = useState<string[]>([]);
   const isMobile = useMediaQuery("(max-width: 1023px)");
   
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
   };
 
+  const toggleMobileSubmenu = (itemName: string) => {
+    setOpenMobileItems(prev => 
+      prev.includes(itemName) 
+        ? prev.filter(item => item !== itemName) 
+        : [...prev, itemName]
+    );
+  };
+  
+  // Check if a mobile menu item is expanded
+  const isExpanded = (itemName: string) => {
+    return openMobileItems.includes(itemName);
+  };
+
   // Left side navigation items
-  const leftNavItems = [
+  const leftNavItems: NavItem[] = [
     {
       name: "Sobre nós",
       icon: <Info className="h-4 w-4" />,
@@ -118,7 +145,7 @@ const Header = () => {
   ];
 
   // Right side navigation items
-  const rightNavItems = [
+  const rightNavItems: NavItem[] = [
     {
       name: "Estrutura",
       icon: <LayoutGrid className="h-4 w-4" />,
@@ -171,7 +198,7 @@ const Header = () => {
   ];
 
   // Render desktop navigation item
-  const renderNavItem = (item, index) => {
+  const renderNavItem = (item: NavItem, index: number) => {
     return item.subitems ? (
       <NavigationMenuItem key={`${item.name}-${index}`}>
         <NavigationMenuTrigger className="text-colegio-azul hover:text-colegio-azulClaro font-medium">
@@ -181,13 +208,13 @@ const Header = () => {
           </span>
         </NavigationMenuTrigger>
         <NavigationMenuContent>
-          <ul className="grid w-[200px] gap-1 p-2">
+          <ul className="grid w-[200px] gap-1 p-2 bg-white">
             {item.subitems.map((subitem, subIndex) => (
               <li key={`${subitem.name}-${subIndex}`}>
                 <NavigationMenuLink asChild>
                   <Link 
                     to={subitem.href} 
-                    className="block select-none rounded-md p-2 text-sm hover:bg-gray-100 hover:text-colegio-azul"
+                    className="block select-none rounded-md p-2 text-sm hover:bg-gray-100 hover:text-colegio-azul text-colegio-azul"
                   >
                     {subitem.name}
                   </Link>
@@ -210,7 +237,7 @@ const Header = () => {
     );
   };
 
-  // Mobile menu using Sheet component
+  // Mobile menu using Sheet component with Collapsible for submenus
   const renderMobileMenu = () => (
     <Sheet>
       <SheetTrigger asChild>
@@ -218,7 +245,7 @@ const Header = () => {
           <Menu className="h-6 w-6 text-colegio-azul" />
         </Button>
       </SheetTrigger>
-      <SheetContent side="left" className="w-[300px] sm:w-[350px] overflow-y-auto">
+      <SheetContent side="left" className="w-[300px] sm:w-[350px] overflow-y-auto bg-white">
         <div className="py-4 px-2 space-y-6">
           <div className="mb-6">
             <Link to="/" className="flex justify-center">
@@ -259,28 +286,37 @@ const Header = () => {
             </div>
           </div>
           
-          {/* Main navigation */}
+          {/* Main navigation with collapsible submenus */}
           <div className="space-y-1">
             {[...leftNavItems, ...rightNavItems].map((item, index) => (
               item.subitems ? (
-                <DropdownMenu key={`mobile-${item.name}-${index}`}>
-                  <DropdownMenuTrigger className="flex items-center px-3 py-2 text-sm font-medium text-colegio-azul hover:bg-gray-50 rounded-md w-full justify-between">
+                <Collapsible 
+                  key={`mobile-${item.name}-${index}`}
+                  open={isExpanded(item.name)}
+                  onOpenChange={() => toggleMobileSubmenu(item.name)}
+                >
+                  <CollapsibleTrigger className="flex items-center justify-between w-full px-3 py-2 text-sm font-medium text-colegio-azul hover:bg-gray-50 rounded-md">
                     <span className="flex items-center">
                       {item.icon}
                       <span className="ml-1">{item.name}</span>
                     </span>
-                    <ChevronDown className="h-4 w-4" />
-                  </DropdownMenuTrigger>
-                  <DropdownMenuContent>
+                    {isExpanded(item.name) ? 
+                      <ChevronUp className="h-4 w-4" /> : 
+                      <ChevronDown className="h-4 w-4" />
+                    }
+                  </CollapsibleTrigger>
+                  <CollapsibleContent className="bg-gray-50 rounded-md mt-1 ml-6">
                     {item.subitems.map((subitem, subIndex) => (
-                      <DropdownMenuItem key={`mobile-${subitem.name}-${subIndex}`} asChild>
-                        <Link to={subitem.href}>
-                          {subitem.name}
-                        </Link>
-                      </DropdownMenuItem>
+                      <Link 
+                        key={`mobile-${subitem.name}-${subIndex}`} 
+                        to={subitem.href}
+                        className="block px-4 py-2 text-sm text-colegio-azul hover:bg-gray-100"
+                      >
+                        {subitem.name}
+                      </Link>
                     ))}
-                  </DropdownMenuContent>
-                </DropdownMenu>
+                  </CollapsibleContent>
+                </Collapsible>
               ) : (
                 <Link 
                   key={`mobile-${item.name}-${index}`} 
