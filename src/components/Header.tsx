@@ -187,13 +187,13 @@ const Header = () => {
       name: "App IENT",
       icon: <Smartphone className="h-4 w-4" />,
       href: "https://id.layers.digital/sign-in",
-      color: "bg-colegio-azul text-white hover:bg-colegio-azulClaro"
+      color: "bg-colegio-amarelo text-colegio-azul hover:bg-colegio-amareloClaro"
     }, 
     {
       name: "Meu Acesso",
       icon: <LogIn className="h-4 w-4" />,
       href: "https://nt.ient.com.br/meu-acesso",
-      color: "bg-colegio-azul text-white hover:bg-colegio-azulClaro"
+      color: "bg-colegio-amarelo text-colegio-azul hover:bg-colegio-amareloClaro"
     }
   ];
 
@@ -242,10 +242,10 @@ const Header = () => {
     <Sheet>
       <SheetTrigger asChild>
         <Button variant="ghost" size="icon" className="lg:hidden">
-          <Menu className="h-6 w-6 text-colegio-azul" />
+          <Menu className="h-6 w-6 text-white" />
         </Button>
       </SheetTrigger>
-      <SheetContent side="left" className="w-[300px] sm:w-[350px] overflow-y-auto bg-white">
+      <SheetContent side="left" className="w-[300px] sm:w-[350px] overflow-y-auto bg-colegio-azul">
         <div className="py-4 px-2 space-y-6">
           <div className="mb-6">
             <Link to="/" className="flex justify-center">
@@ -257,7 +257,7 @@ const Header = () => {
           <div className="space-y-2 border-b pb-4">
             <div className="flex items-center space-x-2 px-3 py-2">
               <Phone className="h-4 w-4 text-colegio-azul" />
-              <span className="text-sm">(31) 3333-4444</span>
+              <span className="text-sm">(31) 3391-6097</span>
             </div>
             
             <div className="flex justify-center space-x-4 py-2">
