@@ -27,7 +27,23 @@ const Hero = () => {
   ];
 
   return (
-    <section className="banner-main w-full">
+    <section className="banner-main w-full relative">
+      {/* Matrícula and Rematrícula buttons */}
+      <div className="absolute top-4 left-0 right-0 z-20 flex flex-col md:flex-row justify-center items-center gap-3 md:gap-6">
+        <a 
+          href="https://contagem.ient.com.br/matricula" 
+          className="px-6 py-3 bg-colegio-azul text-white rounded-lg shadow-md hover:shadow-lg transition-all duration-300 hover:brightness-110 font-semibold text-lg md:text-xl"
+        >
+          Matrícula
+        </a>
+        <a 
+          href="https://contagem.ient.com.br/matricula" 
+          className="px-6 py-3 bg-colegio-amarelo text-colegio-azul rounded-lg shadow-md hover:shadow-lg transition-all duration-300 hover:brightness-110 font-semibold text-lg md:text-xl"
+        >
+          Rematrícula
+        </a>
+      </div>
+
       <Carousel
         opts={{
           loop: true,

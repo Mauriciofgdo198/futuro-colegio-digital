@@ -9,7 +9,6 @@ import SocialBanner from "@/components/SocialBanner";
 import Footer from "@/components/Footer";
 import WhatsAppButton from "@/components/WhatsAppButton";
 import ScheduleVisitButton from "@/components/ScheduleVisitButton";
-import MatriculaButtons from "@/components/MatriculaButtons";
 
 const Index = () => {
   return (
@@ -19,7 +18,6 @@ const Index = () => {
         <Hero />
         <MatriculaBanner />
         <EnsinoSection />
-        <MatriculaButtons />
         <VideoSection />
         <DestaqueSection />
         <SocialBanner />
