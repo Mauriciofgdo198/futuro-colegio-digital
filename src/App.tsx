@@ -19,6 +19,13 @@ import Missao from "./pages/sobre/Missao";
 import EnemVestibular from "./pages/projetos/EnemVestibular";
 import NossosProjetos from "./pages/projetos/NossosProjetos";
 
+// Ensinos pages
+import Infantil from "./pages/ensinos/Infantil";
+import Fundamental1 from "./pages/ensinos/Fundamental1";
+import Fundamental2 from "./pages/ensinos/Fundamental2";
+import Medio from "./pages/ensinos/Medio";
+import Integral from "./pages/ensinos/Integral";
+
 // Contato page
 import Contato from "./pages/contato/Contato";
 
@@ -49,11 +56,11 @@ const App = () => (
           <Route path="/unidades/betim" element={<Placeholder />} />
           
           <Route path="/ensinos" element={<Placeholder />} />
-          <Route path="/ensinos/infantil" element={<Placeholder />} />
-          <Route path="/ensinos/fundamental-1" element={<Placeholder />} />
-          <Route path="/ensinos/fundamental-2" element={<Placeholder />} />
-          <Route path="/ensinos/medio" element={<Placeholder />} />
-          <Route path="/ensinos/integral" element={<Placeholder />} />
+          <Route path="/ensinos/infantil" element={<Infantil />} />
+          <Route path="/ensinos/fundamental-1" element={<Fundamental1 />} />
+          <Route path="/ensinos/fundamental-2" element={<Fundamental2 />} />
+          <Route path="/ensinos/medio" element={<Medio />} />
+          <Route path="/ensinos/integral" element={<Integral />} />
           
           <Route path="/estrutura" element={<Estrutura />} />
           <Route path="/noticias" element={<Placeholder />} />
