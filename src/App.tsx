@@ -1,4 +1,3 @@
-
 import { Toaster } from "@/components/ui/toaster";
 import { Toaster as Sonner } from "@/components/ui/sonner";
 import { TooltipProvider } from "@/components/ui/tooltip";
@@ -8,6 +7,7 @@ import Index from "./pages/Index";
 import Placeholder from "./pages/Placeholder";
 import NotFound from "./pages/NotFound";
 import Estrutura from "./pages/Estrutura";
+import Noticias from "./pages/Noticias";
 
 // Sobre nós pages
 import QuemSomos from "./pages/sobre/QuemSomos";
@@ -67,7 +67,7 @@ const App = () => (
           <Route path="/ensinos/integral" element={<Integral />} />
           
           <Route path="/estrutura" element={<Estrutura />} />
-          <Route path="/noticias" element={<Placeholder />} />
+          <Route path="/noticias" element={<Noticias />} />
           
           {/* Páginas da galeria */}
           <Route path="/galerias" element={<GaleriasPage />} />
