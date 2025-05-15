@@ -29,6 +29,10 @@ import Integral from "./pages/ensinos/Integral";
 // Contato page
 import Contato from "./pages/contato/Contato";
 
+// Galerias pages
+import GaleriasPage from "./pages/galerias/GaleriasPage";
+import AlbumPage from "./pages/galerias/AlbumPage";
+
 const queryClient = new QueryClient();
 
 const App = () => (
@@ -64,7 +68,11 @@ const App = () => (
           
           <Route path="/estrutura" element={<Estrutura />} />
           <Route path="/noticias" element={<Placeholder />} />
-          <Route path="/galerias" element={<Placeholder />} />
+          
+          {/* Páginas da galeria */}
+          <Route path="/galerias" element={<GaleriasPage />} />
+          <Route path="/galerias/:id" element={<AlbumPage />} />
+          
           <Route path="/contato" element={<Contato />} />
           
           {/* Páginas de ação */}
