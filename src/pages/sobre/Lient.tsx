@@ -1,14 +1,11 @@
-
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import WhatsAppButton from "@/components/WhatsAppButton";
 import ScheduleVisitButton from "@/components/ScheduleVisitButton";
 import { Separator } from "@/components/ui/separator";
 import { Button } from "@/components/ui/button";
-
 const Lient = () => {
-  return (
-    <div className="min-h-screen flex flex-col">
+  return <div className="min-h-screen flex flex-col">
       <Header />
       <main className="flex-grow container mx-auto px-4 py-12">
         <div className="max-w-4xl mx-auto">
@@ -43,11 +40,7 @@ const Lient = () => {
             </div>
             
             <div>
-              <img 
-                src="/lovable-uploads/a78ac681-2089-42e4-8fc6-e3bbda2d5317.png" 
-                alt="Lient - Mascote do Instituto Novos Tempos" 
-                className="w-full max-w-xs mx-auto object-contain"
-              />
+              <img src="/lovable-uploads/a78ac681-2089-42e4-8fc6-e3bbda2d5317.png" alt="Lient - Mascote do Instituto Novos Tempos" className="w-full max-w-xs mx-auto object-contain" />
               
               <div className="mt-8 bg-white rounded-lg shadow-md p-6">
                 <h3 className="text-xl font-bold mb-4 text-center text-colegio-azul">LIENT GAMES</h3>
@@ -71,7 +64,7 @@ const Lient = () => {
               
               <div className="mt-6 text-center">
                 <h3 className="text-xl font-bold mb-2">INSTAGRAM</h3>
-                <Button className="bg-gradient-to-r from-purple-500 to-pink-500 hover:from-purple-600 hover:to-pink-600">
+                <Button className="bg-gradient-to-r from-purple-500 to-pink-500 hover:from-purple-600 hover:to-pink-600 bg-colegio-azul text-white">
                   <a href="https://www.instagram.com/institutonovostempos/" target="_blank" rel="noopener noreferrer">Seguir</a>
                 </Button>
               </div>
@@ -82,8 +75,6 @@ const Lient = () => {
       <Footer />
       <WhatsAppButton />
       <ScheduleVisitButton />
-    </div>
-  );
+    </div>;
 };
-
 export default Lient;
