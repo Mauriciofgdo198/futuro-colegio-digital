@@ -121,6 +121,55 @@ const Hero = () => {
         <CarouselPrevious className="absolute left-4 top-1/2 -translate-y-1/2 bg-black/30 hover:bg-black/50 border-none text-white" />
         <CarouselNext className="absolute right-4 top-1/2 -translate-y-1/2 bg-black/30 hover:bg-black/50 border-none text-white" />
       </Carousel>
+
+      {/* Bottom Section with Three Boxes */}
+      <div className="absolute bottom-8 left-0 right-0 z-20 px-4">
+        <div className="text-center mb-6">
+          <h2 className="text-white text-2xl md:text-3xl font-bold">
+            Faça parte da nossa comunidade educacional
+          </h2>
+        </div>
+        
+        <div className="flex flex-col md:flex-row justify-center items-center gap-4">
+          {/* Rematrícula */}
+          <a 
+            href="/rematricula" 
+            className="bg-white hover:bg-gray-100 text-colegio-azul rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 p-4 w-full max-w-xs text-center group"
+          >
+            <div className="flex flex-col items-center space-y-2">
+              <Calendar className="w-8 h-8 text-colegio-azul group-hover:scale-110 transition-transform duration-300" />
+              <h3 className="font-bold text-lg">Rematrícula</h3>
+              <p className="text-sm opacity-90">Renove sua matrícula para 2025!</p>
+            </div>
+          </a>
+
+          {/* IENT Store */}
+          <a 
+            href="https://ientstore.commercesuite.com.br/" 
+            target="_blank"
+            rel="noopener noreferrer"
+            className="bg-colegio-amarelo hover:bg-colegio-amareloClaro text-colegio-azul rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 p-4 w-full max-w-xs text-center group"
+          >
+            <div className="flex flex-col items-center space-y-2">
+              <Store className="w-8 h-8 text-colegio-azul group-hover:scale-110 transition-transform duration-300" />
+              <h3 className="font-bold text-lg">IENT Store</h3>
+              <p className="text-sm opacity-90">Sua loja online chegou! Acesse e confira!</p>
+            </div>
+          </a>
+
+          {/* Matrículas */}
+          <a 
+            href="https://contagem.ient.com.br/matricula" 
+            className="bg-white hover:bg-gray-100 text-colegio-azul rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 p-4 w-full max-w-xs text-center group"
+          >
+            <div className="flex flex-col items-center space-y-2">
+              <GraduationCap className="w-8 h-8 text-colegio-azul group-hover:scale-110 transition-transform duration-300" />
+              <h3 className="font-bold text-lg">Matrículas</h3>
+              <p className="text-sm opacity-90">Admissão de novos alunos 2025, matricule-se.</p>
+            </div>
+          </a>
+        </div>
+      </div>
     </section>
   );
 };
