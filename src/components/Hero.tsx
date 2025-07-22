@@ -7,8 +7,6 @@ import {
   CarouselPrevious,
 } from "@/components/ui/carousel";
 import { useMediaQuery } from "@/hooks/use-mobile";
-import { Calendar, Store, GraduationCap } from "lucide-react";
-
 const Hero = () => {
   const isMobile = useMediaQuery("(max-width: 768px)");
   
@@ -29,47 +27,6 @@ const Hero = () => {
 
   return (
     <section className="banner-main w-full relative">
-      {/* Three Action Boxes */}
-      <div className="absolute top-4 left-0 right-0 z-20 flex flex-col lg:flex-row justify-center items-center gap-4 px-4">
-        {/* Unidades */}
-        <a 
-          href="/unidades" 
-          className="bg-colegio-azul hover:bg-colegio-azulClaro text-white rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 p-4 w-full max-w-xs lg:max-w-sm text-center group"
-        >
-          <div className="flex flex-col items-center space-y-2">
-            <Calendar className="w-8 h-8 text-white group-hover:scale-110 transition-transform duration-300" />
-            <h3 className="font-bold text-lg">Unidades</h3>
-            <p className="text-sm opacity-90">Conheça nossas unidades!</p>
-          </div>
-        </a>
-
-        {/* IENT Store */}
-        <a 
-          href="https://ientstore.commercesuite.com.br/" 
-          target="_blank"
-          rel="noopener noreferrer"
-          className="bg-colegio-amarelo hover:bg-colegio-amareloClaro text-colegio-azul rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 p-4 w-full max-w-xs lg:max-w-sm text-center group"
-        >
-          <div className="flex flex-col items-center space-y-2">
-            <Store className="w-8 h-8 text-colegio-azul group-hover:scale-110 transition-transform duration-300" />
-            <h3 className="font-bold text-lg">IENT Store</h3>
-            <p className="text-sm opacity-90">Sua loja online chegou! Acesse e confira!</p>
-          </div>
-        </a>
-
-        {/* Matrículas */}
-        <a 
-          href="https://contagem.ient.com.br/matricula" 
-          className="bg-colegio-azul hover:bg-colegio-azulClaro text-white rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 p-4 w-full max-w-xs lg:max-w-sm text-center group"
-        >
-          <div className="flex flex-col items-center space-y-2">
-            <GraduationCap className="w-8 h-8 text-white group-hover:scale-110 transition-transform duration-300" />
-            <h3 className="font-bold text-lg">Matrículas</h3>
-            <p className="text-sm opacity-90">Admissão de novos alunos 2025, matricule-se.</p>
-          </div>
-        </a>
-      </div>
-
       <Carousel
         opts={{
           loop: true,
