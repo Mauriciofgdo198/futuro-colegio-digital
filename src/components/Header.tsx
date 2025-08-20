@@ -102,9 +102,6 @@ const Header = () => {
       icon: <Projector className="h-4 w-4" />,
       href: "/projetos",
       subitems: [{
-        name: "Enem/Vestibular",
-        href: "/projetos/enem-vestibular"
-      }, {
         name: "Nossos Projetos",
         href: "/projetos/nossos-projetos"
       }]

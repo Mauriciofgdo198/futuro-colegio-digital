@@ -15,7 +15,6 @@ import Lient from "./pages/sobre/Lient";
 import Missao from "./pages/sobre/Missao";
 
 // Projetos pages
-import EnemVestibular from "./pages/projetos/EnemVestibular";
 import NossosProjetos from "./pages/projetos/NossosProjetos";
 
 // Ensinos pages
@@ -51,7 +50,6 @@ const App = () => (
           <Route path="/sobre/missao" element={<Missao />} />
           
           <Route path="/projetos" element={<Placeholder />} />
-          <Route path="/projetos/enem-vestibular" element={<EnemVestibular />} />
           <Route path="/projetos/nossos-projetos" element={<NossosProjetos />} />
           
           <Route path="/unidades" element={<Placeholder />} />
