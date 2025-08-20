@@ -11,7 +11,6 @@ import {
   Menu, 
   Image, 
   Projector, 
-  Newspaper, 
   UserPlus, 
   Smartphone, 
   LogIn, 
@@ -151,11 +150,6 @@ const Header = () => {
       name: "Estrutura",
       icon: <LayoutGrid className="h-4 w-4" />,
       href: "/estrutura"
-    }, 
-    {
-      name: "Notícias",
-      icon: <Newspaper className="h-4 w-4" />,
-      href: "/noticias"
     }, 
     {
       name: "Galerias",
