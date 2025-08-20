@@ -152,6 +152,11 @@ const Header = () => {
       href: "/estrutura"
     }, 
     {
+      name: "App IENT",
+      icon: <Smartphone className="h-4 w-4" />,
+      href: "https://id.layers.digital/sign-in"
+    }, 
+    {
       name: "Galerias",
       icon: <Image className="h-4 w-4" />,
       href: "/galerias"
@@ -177,12 +182,6 @@ const Header = () => {
       name: "Matrículas",
       icon: <UserPlus className="h-4 w-4" />,
       href: "https://contagem.ient.com.br/matricula",
-      color: "bg-colegio-amarelo text-colegio-azul hover:bg-colegio-amareloClaro"
-    }, 
-    {
-      name: "App IENT",
-      icon: <Smartphone className="h-4 w-4" />,
-      href: "https://id.layers.digital/sign-in",
       color: "bg-colegio-amarelo text-colegio-azul hover:bg-colegio-amareloClaro"
     }, 
     {
