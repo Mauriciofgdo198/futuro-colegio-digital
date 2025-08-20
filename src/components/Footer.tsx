@@ -5,9 +5,17 @@ import { Separator } from "@/components/ui/separator";
 const Footer = () => {
   const currentYear = new Date().getFullYear();
   
-  const socialLinks = [
+  const socialLinksContagem = [
     { name: "Facebook", href: "https://web.facebook.com/ColegioNovosTempos/?locale=pt_BR&_rdc=1&_rdr#", icon: "facebook" },
     { name: "Instagram", href: "https://www.instagram.com/colegionovostempos/", icon: "instagram" },
+    { name: "Youtube", href: "https://www.youtube.com/c/Col%C3%A9gioNovosTemposContagem", icon: "youtube" },
+    { name: "Twitter", href: "https://x.com/novos_tempos", icon: "twitter" },
+    { name: "TikTok", href: "https://www.tiktok.com/@colegionovostempos", icon: "tiktok" },
+  ];
+
+  const socialLinksBetim = [
+    { name: "Facebook", href: "https://web.facebook.com/ColegioNovosTempos/?locale=pt_BR&_rdc=1&_rdr#", icon: "facebook" },
+    { name: "Instagram", href: "https://www.instagram.com/colegionovostemposbetim/", icon: "instagram" },
     { name: "Youtube", href: "https://www.youtube.com/c/Col%C3%A9gioNovosTemposContagem", icon: "youtube" },
     { name: "Twitter", href: "https://x.com/novos_tempos", icon: "twitter" },
     { name: "TikTok", href: "https://www.tiktok.com/@colegionovostempos", icon: "tiktok" },
@@ -35,7 +43,7 @@ const Footer = () => {
             </p>
             
             <div className="flex space-x-3 pt-2">
-              {socialLinks.map((social) => (
+              {socialLinksContagem.map((social) => (
                 <a
                   key={`contagem-${social.name}`}
                   href={social.href}
@@ -73,7 +81,7 @@ const Footer = () => {
             </p>
             
             <div className="flex space-x-3 pt-2">
-              {socialLinks.map((social) => (
+              {socialLinksBetim.map((social) => (
                 <a
                   key={`betim-${social.name}`}
                   href={social.href}
@@ -141,17 +149,9 @@ const Footer = () => {
                     width="32" 
                     height="32" 
                     viewBox="0 0 24 24" 
-                    fill="none" 
-                    stroke="currentColor" 
-                    strokeWidth="2" 
-                    strokeLinecap="round" 
-                    strokeLinejoin="round"
+                    fill="currentColor"
                   >
-                    <path d="m3 6 7.89 5.26a2 2 0 0 0 2.22 0L21 6" />
-                    <path d="M5.6 4.2 12 10l6.4-5.8a1.98 1.98 0 0 0-1.15-.6h-10.5a1.98 1.98 0 0 0-1.15.6Z" />
-                    <path d="M21 6v12a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V6" />
-                    <path d="m3 6 8 7" />
-                    <path d="m21 6-8 7" />
+                    <path d="M3.609 1.814L13.792 12 3.61 22.186a.996.996 0 0 1-.61-.92V2.734a1 1 0 0 1 .609-.92zm10.89 10.893l2.302 2.302-10.937 6.333 8.635-8.635zm3.199-3.198l2.807 1.626a1 1 0 0 1 0 1.73l-2.808 1.626L15.31 12l2.388-2.491zM5.864 2.658L16.802 8.99l-2.302 2.302-8.636-8.634z"/>
                   </svg>
                 </a>
                 <a 
@@ -166,14 +166,9 @@ const Footer = () => {
                     width="32" 
                     height="32" 
                     viewBox="0 0 24 24" 
-                    fill="none" 
-                    stroke="currentColor" 
-                    strokeWidth="2" 
-                    strokeLinecap="round" 
-                    strokeLinejoin="round"
+                    fill="currentColor"
                   >
-                    <path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10z" />
-                    <path d="M14.41 8.41 12 10.83m0 0-2.41-2.41m2.41 2.41V6m-8 6h2m14 0h-2m-7 4v2" />
+                    <path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.81-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/>
                   </svg>
                 </a>
                 <a 
@@ -183,7 +178,21 @@ const Footer = () => {
                   className="hover:opacity-80 transition-opacity"
                   aria-label="Acessar site"
                 >
-                  <Download className="h-8 w-8" />
+                  <svg 
+                    xmlns="http://www.w3.org/2000/svg" 
+                    width="32" 
+                    height="32" 
+                    viewBox="0 0 24 24" 
+                    fill="none" 
+                    stroke="currentColor" 
+                    strokeWidth="2" 
+                    strokeLinecap="round" 
+                    strokeLinejoin="round"
+                  >
+                    <rect x="2" y="3" width="20" height="14" rx="2" ry="2"/>
+                    <line x1="8" y1="21" x2="16" y2="21"/>
+                    <line x1="12" y1="17" x2="12" y2="21"/>
+                  </svg>
                 </a>
               </div>
             </div>
