@@ -21,7 +21,8 @@ import {
   Phone,
   Facebook,
   Instagram,
-  Twitter
+  Twitter,
+  Youtube
 } from "lucide-react";
 
 import { 
@@ -172,7 +173,8 @@ const Header = () => {
   const socialLinks = [
     { icon: <Facebook className="h-4 w-4" />, href: "https://facebook.com" },
     { icon: <Instagram className="h-4 w-4" />, href: "https://instagram.com" },
-    { icon: <Twitter className="h-4 w-4" />, href: "https://twitter.com" }
+    { icon: <Twitter className="h-4 w-4" />, href: "https://twitter.com" },
+    { icon: <Youtube className="h-4 w-4" />, href: "https://www.youtube.com/c/Col%C3%A9gioNovosTemposContagem" }
   ];
 
   // Action buttons
