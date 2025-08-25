@@ -347,8 +347,8 @@ const Header = () => {
           <div className="flex h-10 items-center justify-between">
             {/* Phone number */}
             <div className="flex items-center">
-              <Phone className="h-4 w-4 text-colegio-azul mr-2" />
-              <span className="text-sm">(31) 3333-4444</span>
+              <Phone className="h-4 w-4 text-white mr-2" />
+              <span className="text-sm text-white">(31) 3333-4444</span>
             </div>
             
             {/* Social links */}
@@ -359,7 +359,7 @@ const Header = () => {
                   href={link.href} 
                   target="_blank" 
                   rel="noopener noreferrer"
-                  className="p-1 rounded-full hover:bg-gray-200 text-colegio-azul"
+                  className="p-1 rounded-full hover:bg-white/20 text-white"
                 >
                   {link.icon}
                 </a>

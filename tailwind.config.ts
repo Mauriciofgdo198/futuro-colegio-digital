@@ -65,9 +65,9 @@ export default {
 				},
 				// Cores personalizadas para o Colégio Novos Tempos
 				colegio: {
-					azul: '#1a4d9e',
+					azul: '#0F2970',
 					amarelo: '#ffe600',
-					azulClaro: '#3a7bd5',
+					azulClaro: '#0F2970',
 					amareloClaro: '#fff48f',
 				}
 			},
