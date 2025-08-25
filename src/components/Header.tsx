@@ -182,7 +182,7 @@ const Header = () => {
   const socialLinks = [
     { icon: <Facebook className="h-4 w-4" />, href: "https://facebook.com" },
     { icon: <Instagram className="h-4 w-4" />, href: "https://instagram.com" },
-    { icon: <XIcon className="h-4 w-4" />, href: "https://twitter.com" },
+    { icon: <XIcon className="h-4 w-4" />, href: "https://x.com/novos_tempos" },
     { icon: <Youtube className="h-4 w-4" />, href: "https://www.youtube.com/c/Col%C3%A9gioNovosTemposContagem" }
   ];
 

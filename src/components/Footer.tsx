@@ -9,7 +9,7 @@ const Footer = () => {
     { name: "Facebook", href: "https://web.facebook.com/ColegioNovosTempos/?locale=pt_BR&_rdc=1&_rdr#", icon: "facebook" },
     { name: "Instagram", href: "https://www.instagram.com/colegionovostempos/", icon: "instagram" },
     { name: "Youtube", href: "https://www.youtube.com/c/Col%C3%A9gioNovosTemposContagem", icon: "youtube" },
-    { name: "Twitter", href: "https://x.com/novos_tempos", icon: "twitter" },
+    { name: "X", href: "https://x.com/novos_tempos", icon: "twitter" },
     { name: "TikTok", href: "https://www.tiktok.com/@colegionovostempos", icon: "tiktok" },
   ];
 
@@ -17,7 +17,7 @@ const Footer = () => {
     { name: "Facebook", href: "https://web.facebook.com/ColegioNovosTempos/?locale=pt_BR&_rdc=1&_rdr#", icon: "facebook" },
     { name: "Instagram", href: "https://www.instagram.com/colegionovostemposbetim/", icon: "instagram" },
     { name: "Youtube", href: "https://www.youtube.com/c/Col%C3%A9gioNovosTemposContagem", icon: "youtube" },
-    { name: "Twitter", href: "https://x.com/novos_tempos", icon: "twitter" },
+    { name: "X", href: "https://x.com/novos_tempos", icon: "twitter" },
     { name: "TikTok", href: "https://www.tiktok.com/@colegionovostempos", icon: "tiktok" },
   ];
 

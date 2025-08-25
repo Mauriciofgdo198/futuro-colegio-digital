@@ -1,6 +1,20 @@
 
 import { Button } from "@/components/ui/button";
-import { Facebook, Instagram, Youtube, Twitter } from "lucide-react";
+import { Facebook, Instagram, Youtube } from "lucide-react";
+
+// Custom X icon component for Twitter/X
+const XIcon = ({ className }: { className?: string }) => (
+  <svg 
+    xmlns="http://www.w3.org/2000/svg" 
+    width="24" 
+    height="24" 
+    viewBox="0 0 24 24" 
+    fill="currentColor"
+    className={className}
+  >
+    <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
+  </svg>
+);
 
 const SocialBanner = () => {
   return (
@@ -46,8 +60,8 @@ const SocialBanner = () => {
             className="bg-colegio-azul text-white hover:bg-gray-100 rounded-full text-lg font-bold px-8 py-6"
           >
             <a href="https://x.com/novos_tempos" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2">
-              <Twitter className="h-6 w-6" />
-              <span>Twitter</span>
+              <XIcon className="h-6 w-6" />
+              <span>X</span>
             </a>
           </Button>
 
