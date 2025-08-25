@@ -389,33 +389,34 @@ const Header = () => {
             {renderMobileMenu()}
           </div>
           
-          {/* Navigation with centered logo */}
-          <div className="hidden lg:flex w-full items-center">
-            <NavigationMenu className="w-full">
-              <NavigationMenuList className="w-full flex items-center justify-between">
-                {/* Left navigation items */}
-                <div className="flex items-center space-x-1">
-                  {leftNavItems.map((item, index) => renderNavItem(item, index))}
-                </div>
-                
-                {/* Logo (Centered) */}
-                <div className="flex-shrink-0 mx-8">
-                  <Link to="/" className="flex items-center">
-                    <img 
-                      src="/lovable-uploads/a78ac681-2089-42e4-8fc6-e3bbda2d5317.png" 
-                      alt="Colégio Novos Tempos" 
-                      className="h-20 object-contain"
-                    />
-                  </Link>
-                </div>
-                
-                {/* Right navigation items */}
-                <div className="flex items-center space-x-1">
-                  {rightNavItems.map((item, index) => renderNavItem(item, index))}
-                </div>
+          {/* Left navigation */}
+          <nav className="hidden lg:flex flex-1 justify-end">
+            <NavigationMenu>
+              <NavigationMenuList>
+                {leftNavItems.map((item, index) => renderNavItem(item, index))}
               </NavigationMenuList>
             </NavigationMenu>
+          </nav>
+          
+          {/* Logo (Centered) */}
+          <div className="flex-shrink-0 flex justify-center mx-4">
+            <Link to="/" className="flex items-center">
+              <img 
+                src="/lovable-uploads/a78ac681-2089-42e4-8fc6-e3bbda2d5317.png" 
+                alt="Colégio Novos Tempos" 
+                className="h-20 object-contain"
+              />
+            </Link>
           </div>
+          
+          {/* Right navigation */}
+          <nav className="hidden lg:flex flex-1 justify-start">
+            <NavigationMenu>
+              <NavigationMenuList>
+                {rightNavItems.map((item, index) => renderNavItem(item, index))}
+              </NavigationMenuList>
+            </NavigationMenu>
+          </nav>
           
           {/* Empty div for mobile layout balance */}
           <div className="lg:hidden w-10"></div>
