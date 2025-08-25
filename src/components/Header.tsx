@@ -206,7 +206,7 @@ const Header = () => {
   const renderNavItem = (item: NavItem, index: number) => {
     return item.subitems ? (
       <NavigationMenuItem key={`${item.name}-${index}`}>
-        <NavigationMenuTrigger className="text-white hover:text-white/80 font-medium">
+        <NavigationMenuTrigger className="text-colegio-azul hover:text-colegio-azulClaro font-medium">
           <span className="flex items-center">
             {item.icon}
             <span className="ml-1">{item.name}</span>
@@ -233,7 +233,7 @@ const Header = () => {
       <NavigationMenuItem key={`${item.name}-${index}`}>
         <Link 
           to={item.href} 
-          className="inline-flex items-center px-3 py-2 text-sm font-medium text-white hover:text-white/80 hover:bg-white/10 rounded-md transition-colors"
+          className="inline-flex items-center px-3 py-2 text-sm font-medium text-colegio-azul hover:text-colegio-azulClaro hover:bg-gray-50 rounded-md transition-colors"
         >
           {item.icon}
           <span className="ml-1">{item.name}</span>
@@ -247,7 +247,7 @@ const Header = () => {
     <Sheet>
       <SheetTrigger asChild>
         <Button variant="ghost" size="icon" className="lg:hidden">
-          <Menu className="h-6 w-6 text-white" />
+          <Menu className="h-6 w-6 text-colegio-azul" />
         </Button>
       </SheetTrigger>
       <SheetContent side="left" className="w-[300px] sm:w-[350px] overflow-y-auto bg-colegio-azul">
@@ -340,7 +340,7 @@ const Header = () => {
   );
 
   return (
-    <header className="sticky top-0 z-50 w-full bg-colegio-azul/95 backdrop-blur-md shadow-md">
+    <header className="sticky top-0 z-50 w-full bg-white/90 backdrop-blur-md shadow-md">
       {/* Top bar */}
       <div className="hidden md:block bg-colegio-azulClaro/20 backdrop-blur-sm border-b border-colegio-azulClaro/30">
         <div className="container mx-auto px-4">
