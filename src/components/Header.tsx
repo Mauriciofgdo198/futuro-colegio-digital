@@ -340,9 +340,9 @@ const Header = () => {
   );
 
   return (
-    <header className="sticky top-0 z-50 w-full bg-white/90 backdrop-blur-md shadow-md">
+    <header className="sticky top-0 z-50 w-full bg-white shadow-md">
       {/* Top bar */}
-      <div className="hidden md:block bg-colegio-azulClaro/20 backdrop-blur-sm border-b border-colegio-azulClaro/30">
+      <div className="hidden md:block bg-colegio-azul">
         <div className="container mx-auto px-4">
           <div className="flex h-10 items-center justify-between">
             {/* Phone number */}
