@@ -61,7 +61,7 @@ const SocialBanner = () => {
           >
             <a href="https://x.com/novos_tempos" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2">
               <XIcon className="h-6 w-6" />
-              <span>X</span>
+              <span>Twitter</span>
             </a>
           </Button>
 
