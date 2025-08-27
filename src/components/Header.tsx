@@ -1,5 +1,5 @@
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { 
@@ -71,7 +71,21 @@ interface NavItem {
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [openMobileItems, setOpenMobileItems] = useState<string[]>([]);
+  const [openDesktopItems, setOpenDesktopItems] = useState<string[]>([]);
   const isMobile = useMediaQuery("(max-width: 1023px)");
+  
+  // Close desktop menus when clicking outside
+  useEffect(() => {
+    const handleClickOutside = (event: MouseEvent) => {
+      const target = event.target as HTMLElement;
+      if (!target.closest('[data-menu-container]')) {
+        setOpenDesktopItems([]);
+      }
+    };
+
+    document.addEventListener('click', handleClickOutside);
+    return () => document.removeEventListener('click', handleClickOutside);
+  }, []);
   
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
@@ -84,10 +98,23 @@ const Header = () => {
         : [...prev, itemName]
     );
   };
+
+  const toggleDesktopSubmenu = (itemName: string) => {
+    setOpenDesktopItems(prev => 
+      prev.includes(itemName) 
+        ? [] // Close current menu if it's open
+        : [itemName] // Close all others and open this one
+    );
+  };
   
   // Check if a mobile menu item is expanded
   const isExpanded = (itemName: string) => {
     return openMobileItems.includes(itemName);
+  };
+
+  // Check if a desktop menu item is expanded
+  const isDesktopExpanded = (itemName: string) => {
+    return openDesktopItems.includes(itemName);
   };
 
   // Left side navigation items
@@ -205,40 +232,42 @@ const Header = () => {
   // Render desktop navigation item
   const renderNavItem = (item: NavItem, index: number) => {
     return item.subitems ? (
-      <NavigationMenuItem key={`${item.name}-${index}`}>
-        <NavigationMenuTrigger className="text-colegio-azul hover:text-colegio-azulClaro font-medium">
-          <span className="flex items-center">
-            {item.icon}
-            <span className="ml-1">{item.name}</span>
-          </span>
-        </NavigationMenuTrigger>
-        <NavigationMenuContent>
-          <ul className="grid w-[200px] gap-1 p-2 bg-white">
-            {item.subitems.map((subitem, subIndex) => (
-              <li key={`${subitem.name}-${subIndex}`}>
-                <NavigationMenuLink asChild>
-                  <Link 
-                    to={subitem.href} 
-                    className="block select-none rounded-md p-2 text-sm hover:bg-gray-100 hover:text-colegio-azul text-colegio-azul"
-                  >
-                    {subitem.name}
-                  </Link>
-                </NavigationMenuLink>
-              </li>
-            ))}
-          </ul>
-        </NavigationMenuContent>
-      </NavigationMenuItem>
-    ) : (
-      <NavigationMenuItem key={`${item.name}-${index}`}>
-        <Link 
-          to={item.href} 
+      <div key={`${item.name}-${index}`} className="relative">
+        <button
+          onClick={() => toggleDesktopSubmenu(item.name)}
           className="inline-flex items-center px-3 py-2 text-sm font-medium text-colegio-azul hover:text-colegio-azulClaro hover:bg-gray-50 rounded-md transition-colors"
         >
           {item.icon}
           <span className="ml-1">{item.name}</span>
-        </Link>
-      </NavigationMenuItem>
+          <ChevronDown className={`ml-1 h-3 w-3 transition duration-200 ${isDesktopExpanded(item.name) ? 'rotate-180' : ''}`} />
+        </button>
+        {isDesktopExpanded(item.name) && (
+          <div className="absolute top-full left-0 mt-1 z-50">
+            <ul className="grid w-[200px] gap-1 p-2 bg-white border border-gray-200 rounded-md shadow-lg">
+              {item.subitems.map((subitem, subIndex) => (
+                <li key={`${subitem.name}-${subIndex}`}>
+                  <Link 
+                    to={subitem.href} 
+                    className="block select-none rounded-md p-2 text-sm hover:bg-gray-100 hover:text-colegio-azul text-colegio-azul"
+                    onClick={() => setOpenDesktopItems([])} // Close menu when item is clicked
+                  >
+                    {subitem.name}
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </div>
+        )}
+      </div>
+    ) : (
+      <Link 
+        key={`${item.name}-${index}`}
+        to={item.href} 
+        className="inline-flex items-center px-3 py-2 text-sm font-medium text-colegio-azul hover:text-colegio-azulClaro hover:bg-gray-50 rounded-md transition-colors"
+      >
+        {item.icon}
+        <span className="ml-1">{item.name}</span>
+      </Link>
     );
   };
 
@@ -390,7 +419,7 @@ const Header = () => {
           </div>
           
           {/* Left navigation */}
-          <nav className="hidden lg:flex flex-1 justify-end">
+          <nav className="hidden lg:flex flex-1 justify-end" data-menu-container>
             <NavigationMenu>
               <NavigationMenuList>
                 {leftNavItems.map((item, index) => renderNavItem(item, index))}
@@ -410,7 +439,7 @@ const Header = () => {
           </div>
           
           {/* Right navigation */}
-          <nav className="hidden lg:flex flex-1 justify-start">
+          <nav className="hidden lg:flex flex-1 justify-start" data-menu-container>
             <NavigationMenu>
               <NavigationMenuList>
                 {rightNavItems.map((item, index) => renderNavItem(item, index))}
