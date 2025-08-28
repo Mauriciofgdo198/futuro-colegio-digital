@@ -3,7 +3,9 @@ import { Toaster as Sonner } from "@/components/ui/sonner";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Index from "./pages/Index";
+import UnitSelection from "./pages/UnitSelection";
+import Contagem from "./pages/Contagem";
+import Betim from "./pages/Betim";
 import Placeholder from "./pages/Placeholder";
 import NotFound from "./pages/NotFound";
 import Estrutura from "./pages/Estrutura";
@@ -40,7 +42,9 @@ const App = () => (
       <Sonner />
       <BrowserRouter>
         <Routes>
-          <Route path="/" element={<Index />} />
+          <Route path="/" element={<UnitSelection />} />
+          <Route path="/contagem" element={<Contagem />} />
+          <Route path="/betim" element={<Betim />} />
           
           {/* Páginas de navegação principal */}
           <Route path="/sobre" element={<Placeholder />} />
@@ -53,8 +57,8 @@ const App = () => (
           <Route path="/projetos/nossos-projetos" element={<NossosProjetos />} />
           
           <Route path="/unidades" element={<Placeholder />} />
-          <Route path="/unidades/contagem" element={<Placeholder />} />
-          <Route path="/unidades/betim" element={<Placeholder />} />
+          <Route path="/unidades/contagem" element={<Contagem />} />
+          <Route path="/unidades/betim" element={<Betim />} />
           
           <Route path="/ensinos" element={<Placeholder />} />
           <Route path="/ensinos/infantil" element={<Infantil />} />

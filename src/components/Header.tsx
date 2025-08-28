@@ -152,12 +152,12 @@ const Header = () => {
       href: "/unidades",
       subitems: [{
         name: "Unidade Contagem",
-        href: "/unidades/contagem"
+        href: "/contagem"
       }, {
         name: "Unidade Betim",
-        href: "/unidades/betim"
+        href: "/betim"
       }]
-    }, 
+    },
     {
       name: "Ensinos",
       icon: <GraduationCap className="h-4 w-4" />,
