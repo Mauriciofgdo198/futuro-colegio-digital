@@ -25,91 +25,91 @@ const Estrutura = () => {
       id: "centro-esportivo",
       title: "Centro Esportivo",
       imageUrl: "https://images.unsplash.com/photo-1487958449943-2429e8be8625?ixlib=rb-1.2.1&auto=format&fit=crop&w=1200&q=80",
-      description: "Nosso Centro Esportivo é um complexo moderno, projetado para proporcionar as melhores condições para a prática de diversas modalidades esportivas. Contamos com quadras poliesportivas cobertas, campo de futebol com grama sintética, piscina semiolímpica aquecida e academia equipada com aparelhos de última geração. Os espaços são utilizados tanto para as aulas regulares de educação física quanto para atividades extracurriculares e treinamentos das equipes esportivas da escola."
+      description: "Em 2006, considerado o 'Ano do Esporte', o Instituto Novos Tempos iniciou a construção do Centro Esportivo Novos Tempos, localizado na Av.Prefeito Gil Diniz, nº 375, possuindo uma área de aproximadamente 5000 metros. Com a nova estrutura nossos alunos tem a oportunidade de estar em permanente contato com o que há de melhor em infraestrutura esportiva, são quadras poli esportivas, campo soçaite, lanchonete, vestiários dentre outros. Além da utilização para práticas esportivas, educação física, escola de esportes, equipes esportivas e eventos, toda a estrutura será disponibilizada para a comunidade através do aluguel das quadras e/ou para eventos em geral. Entre na onda do esporte e venha conhecer nossa estrutura. Aguardamos você!"
     },
     {
       id: "auditorio",
       title: "Auditório",
       imageUrl: "https://images.unsplash.com/photo-1492321936769-b49830bc1d1e?ixlib=rb-1.2.1&auto=format&fit=crop&w=1200&q=80",
-      description: "Nosso auditório comporta até 300 pessoas e está equipado com sistema de som e iluminação profissionais, projetor de alta definição e palco amplo para apresentações. Este espaço multifuncional recebe desde palestras e conferências até espetáculos artísticos produzidos pelos nossos alunos, formando um ambiente propício para o desenvolvimento cultural e científico da nossa comunidade escolar."
+      description: "Com capacidade para 190 pessoas, o IENT conta com um auditório moderno, com variados equipamentos multimídia, tela para exibição de vídeos e apresentações de trabalhos, palestras e peças teatrais, o que permite melhor visualização por parte do expectador de vários ângulos. Reuniões internas e de pais, além das mais variadas atividades escolares são recebidas nesse espaço que é fundamental para o funcionamento do instituto."
     },
     {
       id: "laboratorio-multidisciplinar",
       title: "Laboratório Multidisciplinar",
       imageUrl: "https://images.unsplash.com/photo-1488972685288-c3fd157d7c7a?ixlib=rb-1.2.1&auto=format&fit=crop&w=1200&q=80",
-      description: "O Laboratório Multidisciplinar foi projetado para integrar as áreas de ciências, física, química e biologia em um único espaço colaborativo. Equipado com bancadas modernas, microscópios de alta resolução, equipamentos para experimentos físicos e químicos, permite abordagens práticas e experimentais no ensino das ciências. Os estudantes desenvolvem projetos científicos sob a orientação de professores especialistas."
+      description: "Tem o objetivo de oferecer ao aluno um espaço destinado as atividades práticas de Ciências, Biologia, Química e Física é essencial para o desenvolvimento pedagógico, além de facilitar as atividades desenvolvidas em sala de aula possibilitando ao aluno aliar teoria e prática. No Laboratório contamos com materiais específicos como: Vidrarias; Microscópio com câmera acoplada para visualização em TV; Modelos, fases gestacionais e outros; Esqueleto; DNA; Peças formolizadas como fígado, rins, coração e pulmão de carneiro; Animais coletados pelos alunos; Cartazes e globos; Substâncias químicas necessárias as aulas; Equipamentos modernos com todos os recursos necessários para o aprendizado constante. Desenvolvemos no laboratório atividades que estimulam a curiosidade e o interesse do aluno por determinada área, levando-o a encontrar o problema, levantar hipóteses, observar, descobrir, analisar resultados, concluir e solucionar o experimento. A atividade prática é uma forma de comprovarmos nossos estudos teóricos, contribuindo com o mundo biotecnológico formando muitos e talvez grandes cientistas. Obs: Todos os alunos são acompanhados por professor (a) gestor (a) específico da área com cuidado e segurança."
     },
     {
       id: "cobertura-predio-a",
       title: "Cobertura Prédio A",
       imageUrl: "https://images.unsplash.com/photo-1439337153520-7082a56a81f4?ixlib=rb-1.2.1&auto=format&fit=crop&w=1200&q=80",
-      description: "A cobertura do Prédio A é um espaço multiuso com vista panorâmica para a cidade. Utilizada para atividades ao ar livre, aulas diferenciadas e eventos especiais, o ambiente conta com cobertura parcial para proteção solar, mobiliário versátil e jardim vertical. Este espaço proporciona um ambiente inspirador para aprendizagem e interação social, sendo muito valorizado pela comunidade escolar."
+      description: "O espaço é utilizado para realização de atividades pedagógicas e eventos institucionais. A cobertura é um espaço aconchegante e amplo. Conta com estrutura de áudio e vídeo e recursos para realização de eventos."
     },
     {
       id: "loja-griffe-nt",
       title: "Loja Griffe NT",
       imageUrl: "https://images.unsplash.com/photo-1496307653780-42ee777d4833?ixlib=rb-1.2.1&auto=format&fit=crop&w=1200&q=80",
-      description: "A Loja Griffe NT oferece toda a linha de uniformes escolares, materiais didáticos personalizados e produtos com a identidade visual da nossa instituição. Localizada em área de fácil acesso dentro do campus, possibilita à comunidade escolar adquirir itens de qualidade que reforçam o sentimento de pertencimento à nossa escola. Além dos uniformes regulares, oferece peças especiais para eventos e coleções sazonais."
+      description: "Em nossa loja você encontra toda linha de uniforme oficial do Colégio Novos Tempos. Camisas, calças, shorts, bermudas, agasalhos e uniformes esportivos. Os tamanhos para a Educação Infantil, Ensino Fundamental e Ensino Médio podem ser conferidos na Loja Griffe NT, no prédio A ao lado da reprografia."
     },
     {
       id: "pensamento-computacional",
       title: "Pensamento Computacional",
       imageUrl: "https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?ixlib=rb-1.2.1&auto=format&fit=crop&w=1200&q=80",
-      description: "O laboratório de Pensamento Computacional é um espaço inovador equipado com computadores de última geração, kits de robótica educacional e impressoras 3D. Neste ambiente, os alunos desenvolvem habilidades de programação, lógica computacional e resolução de problemas através de projetos práticos. As aulas são conduzidas por professores especializados que integram a tecnologia ao currículo escolar regular."
+      description: "Por meio de um ambiente especialmente projetado para o pensamento computacional, os alunos aplicarão tecnologias digitais como programação, robótica, eletrônica digital, internet das coisas, inteligência artificial e práticas Maker."
     },
     {
       id: "estudio-comunicacao",
       title: "Estúdio de Comunicação",
       imageUrl: "https://images.unsplash.com/photo-1494891848038-7bd202a2afeb?ixlib=rb-1.2.1&auto=format&fit=crop&w=1200&q=80",
-      description: "Nosso Estúdio de Comunicação é equipado com tecnologia profissional para produção audiovisual, incluindo câmeras de alta definição, iluminação, microfones e equipamentos de edição. Este espaço permite que os alunos desenvolvam projetos de jornalismo escolar, documentários, podcasts e conteúdo para mídias sociais. O estúdio também é utilizado para aulas de comunicação e expressão, preparando os estudantes para os desafios da era digital."
+      description: "Um espaço de comunicação e Marketing. Nossos alunos tem a oportunidade de produzir conteúdos e criar novas possibilidades nas diversas mídias digitais."
     },
     {
       id: "pracinha",
       title: "Pracinha",
       imageUrl: "https://images.unsplash.com/photo-1551038247-3d9af20df552?ixlib=rb-1.2.1&auto=format&fit=crop&w=1200&q=80",
-      description: "A Pracinha é um espaço recreativo especialmente projetado para os momentos de intervalo e socialização. Com bancos confortáveis, áreas verdes e espaços para jogos de mesa, proporciona um ambiente relaxante onde os alunos podem interagir, descansar e recarregar energias entre as aulas. O local também conta com conectividade Wi-Fi e é frequentemente utilizado para atividades ao ar livre e pequenos eventos culturais."
+      description: "Um espaço ao ar livre, com área verde, pronto para receber nossos alunos em diversas atividades pedagógicas e também em momentos de encontro e oportunidades."
     },
     {
       id: "centro-infantil",
       title: "Centro Infantil",
       imageUrl: "https://images.unsplash.com/photo-1721322800607-8c38375eef04?ixlib=rb-1.2.1&auto=format&fit=crop&w=1200&q=80",
-      description: "O Centro Infantil é um espaço especialmente projetado para atender às necessidades educacionais e recreativas dos nossos alunos da Educação Infantil. Com ambientes coloridos, seguros e estimulantes, conta com salas temáticas, brinquedoteca, mini-biblioteca e áreas de psicomotricidade. Os mobiliários e equipamentos são adequados ao tamanho e necessidades das crianças, criando um ambiente acolhedor que favorece o desenvolvimento integral."
+      description: "Espaço destinado aos alunos da Ed. Infantil. composto por salas de aula, banheiros exclusivos, playground e brinquedoteca. Nesse espaço as crianças de 2 a 5 anos são recebidas diariamente com toda segurança e peculiaridades que a faixa-etária precisa. Além disso, no pátio do Centro Infantil frequentemente são desenvolvidas atividades lúdicas envolvendo alunos do Maternal, 1º e 2º períodos."
     },
     {
       id: "hall-conquistas",
       title: "Hall das Conquistas",
       imageUrl: "https://images.unsplash.com/photo-1518005020951-eccb494ad742?ixlib=rb-1.2.1&auto=format&fit=crop&w=1200&q=80",
-      description: "O Hall das Conquistas é um espaço dedicado a celebrar as realizações da nossa comunidade escolar. Troféus, medalhas, certificados e reconhecimentos obtidos pelos alunos e pela instituição em competições acadêmicas, culturais e esportivas estão expostos em vitrines elegantes. Este ambiente inspira os estudantes a buscarem a excelência e reforça os valores de dedicação e perseverança que cultivamos em nossa escola."
+      description: "O espaço é um corredor com todos os troféus, medalhas, diplomas e certificados em menção honrosa ao instituto. As conquistas ficam em exposição em estantes e quadros com iluminação especial, além de uma placa que identifica o local. Os títulos e participações lembrados no Hall das Conquistas fazem referência à história do colégio, com destaque no esporte, educação e mundo empresarial."
     },
     {
       id: "acessibilidade",
       title: "Acessibilidade",
       imageUrl: "https://images.unsplash.com/photo-1466442929976-97f336a657be?ixlib=rb-1.2.1&auto=format&fit=crop&w=1200&q=80",
-      description: "Nosso compromisso com a inclusão se reflete na infraestrutura acessível que implementamos em todo o campus. Contamos com rampas de acesso, elevadores, banheiros adaptados, sinalização tátil e visual, além de tecnologias assistivas nas salas de aula. A equipe pedagógica é treinada para atender às necessidades educacionais específicas, garantindo que todos os alunos tenham oportunidades iguais de aprendizagem em um ambiente verdadeiramente inclusivo."
+      description: "O Colégio Novos Tempos possui equipamentos e adaptações para acesso de pessoas portadoras de necessidades especiais. Rampas, corrimão, faixa tátil e elevador são alguns dos dispositivos que o Instituto tem instalado para melhor atender a comunidade escolar."
     },
     {
       id: "biblioteca-ziraldo",
       title: "Biblioteca Ziraldo",
       imageUrl: "https://images.unsplash.com/photo-1486718448742-163732cd1544?ixlib=rb-1.2.1&auto=format&fit=crop&w=1200&q=80",
-      description: "A Biblioteca Ziraldo é um espaço acolhedor que abriga um acervo diversificado com mais de 10.000 títulos, incluindo literatura nacional e internacional, obras de referência, periódicos e recursos digitais. Com ambientes para estudo individual e em grupo, computadores para pesquisa e área de leitura confortável, a biblioteca é um centro ativo de aprendizagem e exploração literária. Promovemos regularmente eventos de incentivo à leitura, contação de histórias e encontros com autores."
+      description: "Em 2018, o espaço recebeu o nome de Biblioteca Ziraldo. O cartunista e escritor Ziraldo, criador do personagem Menino Maluquinho, esteve no colégio, no dia 10 de maio de 2017 como premiação do concurso cultural Maratona de Leitura de Livros Infantis, no qual estudantes do Instituto venceram a competição e proporcionaram a presença do cartunista em Contagem, pela primeira vez. A Biblioteca Ziraldo é um centro de recursos educativos, integrada ao processo de ensino - aprendizagem com o objetivo de desenvolver e fomentar a leitura e a informação. Possui um acervo variado com riqueza de livros didáticos, literatura e obras de referência como: enciclopédias, dicionários, almanaques, atlas, revistas, mapoteca, videoteca, cdteca, hemeroteca, gibiteca e outros materiais especiais. A biblioteca está preparada para interagir com a Equipe Docente no desenvolvimento de atividades pedagógicas, facilita, integra e dinamiza o processo de Ensino e Aprendizagem, formando cidadãos reflexivos, orientando alunos e professores à Pesquisa Escolar e desenvolvendo o prazer pela leitura. O horário de funcionamento é de segunda a sexta-feira de 07:00h às 12:00 e 13:00 às 18:00h."
     },
     {
       id: "lanchonete",
       title: "Lanchonete",
       imageUrl: "https://images.unsplash.com/photo-1493397212122-2b85dda8106b?ixlib=rb-1.2.1&auto=format&fit=crop&w=1200&q=80",
-      description: "Nossa lanchonete oferece um cardápio variado e nutritivo, preparado sob a supervisão de nutricionistas qualificados. O espaço é amplo, bem ventilado e organizado para atender confortavelmente aos alunos nos horários de intervalo. Priorizamos alimentos frescos e opções balanceadas, incluindo alternativas para estudantes com restrições alimentares específicas. O ambiente também funciona como ponto de socialização e integração da comunidade escolar."
+      description: "A NT Lanches é nosso espaço para lanches e refeições da nossa comunidade escolar. Um local amplo, arejado e todo preparado para oferecer uma alimentação de qualidade e saudável."
     },
     {
       id: "cozinha-pedagogica",
       title: "Cozinha Pedagógica",
       imageUrl: "https://images.unsplash.com/photo-1461749280684-dccba630e2f6?ixlib=rb-1.2.1&auto=format&fit=crop&w=1200&q=80",
-      description: "A Cozinha Pedagógica é um espaço educativo equipado com bancadas, utensílios, fornos e cooktops onde os alunos aprendem sobre nutrição, técnicas culinárias e cultura alimentar. Utilizada para projetos interdisciplinares que conectam ciências, matemática, história e geografia através da gastronomia, este ambiente proporciona experiências práticas e sensoriais que enriquecem o aprendizado. As aulas são conduzidas por professores e profissionais convidados da área gastronômica."
+      description: "Educação alimentar faz parte do nosso currículo, dentro e fora da sala de aula. Na Cozinha Pedagógica, pode-se vivenciar momentos científicos, tendo como objetivo desenvolver a cooperação, a participação e a interação entre os alunos. Por meio de atividades, desenvolvem-se noções básicas de nutrição, higiene, cuidados com os alimentos e qualidade."
     },
     {
       id: "playground",
       title: "Playground",
       imageUrl: "https://images.unsplash.com/photo-1524230572899-a752b3835840?ixlib=rb-1.2.1&auto=format&fit=crop&w=1200&q=80",
-      description: "Nosso playground foi projetado para proporcionar diversão segura e estimulante para as crianças. Equipado com brinquedos modernos e certificados, o espaço conta com piso emborrachado anti-impacto, áreas sombreadas e monitoramento constante por educadores treinados. Os equipamentos incluem escorregadores, balanços, casinhas, circuitos de psicomotricidade e outros elementos que incentivam o desenvolvimento físico, social e cognitivo através da brincadeira."
+      description: "Nosso playground é uma área de recreação exclusiva para que as crianças possam se divertir e desenvolver seus conhecimentos com segurança. Nessa área de lazer exclusiva é oferecida ótimas oportunidades para os pequenos se divertirem."
     },
   ];
 
