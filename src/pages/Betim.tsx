@@ -1,4 +1,5 @@
 import Header from "@/components/Header";
+import Hero from "@/components/Hero";
 import Footer from "@/components/Footer";
 import WhatsAppButton from "@/components/WhatsAppButton";
 import ScheduleVisitButton from "@/components/ScheduleVisitButton";
@@ -10,25 +11,7 @@ const Betim = () => {
     <div className="min-h-screen flex flex-col">
       <Header />
       <main className="flex-grow">
-        {/* Hero Section */}
-        <section className="relative bg-gradient-to-br from-gray-50 to-gray-100 py-20 px-4 overflow-hidden">
-          <div className="container mx-auto max-w-6xl text-center">
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-colegio-azul mb-6">
-              IENT — Unidade Betim (placeholder)
-            </h1>
-            <p className="text-lg md:text-xl text-gray-600 mb-8 max-w-3xl mx-auto">
-              Texto temporário — substituir por descrição da unidade Betim
-            </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button size="lg" className="bg-colegio-azul hover:bg-colegio-azulClaro text-white rounded-full px-8 py-3 text-lg font-semibold">
-                Agende uma visita (placeholder)
-              </Button>
-              <Button size="lg" variant="outline" className="border-colegio-azul text-colegio-azul hover:bg-colegio-azul hover:text-white rounded-full px-8 py-3 text-lg font-semibold">
-                Conheça nossa estrutura (placeholder)
-              </Button>
-            </div>
-          </div>
-        </section>
+        <Hero />
 
         {/* Matrícula Banner */}
         <section className="bg-colegio-azul py-10 text-white">
