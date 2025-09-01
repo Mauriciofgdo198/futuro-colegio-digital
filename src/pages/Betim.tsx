@@ -16,7 +16,7 @@ const Betim = () => {
         <Hero />
         <MatriculaBanner />
         <EnsinoSection />
-        <VideoSection />
+        <VideoSection videoId="G6wrCjsnRsE" videoTitle="Visite o Novos Tempos" />
         <SocialBanner />
       </main>
       <Footer />

@@ -1,7 +1,16 @@
 import { Play, Youtube } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { useState } from "react";
-const VideoSection = () => {
+
+interface VideoSectionProps {
+  videoId?: string;
+  videoTitle?: string;
+}
+
+const VideoSection = ({ 
+  videoId = "fJ83sXLEDKU", 
+  videoTitle = "Matrículas Abertas 2025 - Inspirar Novos Tempos" 
+}: VideoSectionProps) => {
   const [isVideoOpen, setIsVideoOpen] = useState(false);
   return <section className="py-16 bg-gradient-to-r from-gray-50 to-blue-50">
       <div className="container mx-auto px-4">
@@ -14,7 +23,7 @@ const VideoSection = () => {
           <div className="relative aspect-video bg-gray-200 rounded-xl overflow-hidden shadow-xl cursor-pointer" onClick={() => setIsVideoOpen(true)}>
             {!isVideoOpen ? <>
                 {/* Using actual YouTube thumbnail */}
-                <img src="https://img.youtube.com/vi/fJ83sXLEDKU/maxresdefault.jpg" alt="Vídeo sobre proposta pedagógica" className="w-full h-full object-cover" />
+                <img src={`https://img.youtube.com/vi/${videoId}/maxresdefault.jpg`} alt="Vídeo sobre proposta pedagógica" className="w-full h-full object-cover" />
                 <div className="absolute inset-0 bg-colegio-azul bg-opacity-40 flex items-center justify-center">
                   <Button className="w-16 h-16 rounded-full bg-colegio-amarelo hover:bg-colegio-amareloClaro text-colegio-azul flex items-center justify-center group transition-all duration-300">
                     <Play className="h-8 w-8 group-hover:scale-110 transition-transform" />
@@ -23,7 +32,7 @@ const VideoSection = () => {
                 <div className="absolute bottom-0 left-0 right-0 bg-colegio-azul bg-opacity-80 py-4 px-5 text-white">
                   <div className="flex items-center gap-2">
                     <Youtube className="h-5 w-5 text-red-500" />
-                    <p className="font-medium">Matrículas Abertas 2025 - Inspirar Novos Tempos</p>
+                    <p className="font-medium">{videoTitle}</p>
                   </div>
                   
                   <div className="mt-2 text-sm">
@@ -31,7 +40,7 @@ const VideoSection = () => {
                     <p>CONTAGEM - AV. PREFEITO GIL DINIZ, 581 - CENTRO</p>
                   </div>
                 </div>
-              </> : <iframe src="https://www.youtube.com/embed/fJ83sXLEDKU?autoplay=1" title="Proposta Pedagógica" className="absolute top-0 left-0 w-full h-full border-0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>}
+              </> : <iframe src={`https://www.youtube.com/embed/${videoId}?autoplay=1`} title="Proposta Pedagógica" className="absolute top-0 left-0 w-full h-full border-0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>}
           </div>
           
           {/* Text Content */}
