@@ -16,7 +16,21 @@ const XIcon = ({ className }: { className?: string }) => (
   </svg>
 );
 
-const SocialBanner = () => {
+interface SocialBannerProps {
+  facebookUrl?: string;
+  instagramUrl?: string;
+  youtubeUrl?: string;
+  twitterUrl?: string;
+  tiktokUrl?: string;
+}
+
+const SocialBanner = ({
+  facebookUrl = "https://web.facebook.com/ColegioNovosTempos/?locale=pt_BR&_rdc=1&_rdr#",
+  instagramUrl = "https://www.instagram.com/colegionovostempos/",
+  youtubeUrl = "https://www.youtube.com/c/Col%C3%A9gioNovosTemposContagem",
+  twitterUrl = "https://x.com/novos_tempos",
+  tiktokUrl = "https://www.tiktok.com/@colegionovostempos"
+}: SocialBannerProps) => {
   return (
     <section className="py-12 bg-colegio-amarelo text-colegio-azul">
       <div className="container mx-auto px-4 text-center">
@@ -29,7 +43,7 @@ const SocialBanner = () => {
             asChild
             className="bg-colegio-azul text-white hover:bg-gray-100 rounded-full text-lg font-bold px-8 py-6"
           >
-            <a href="https://web.facebook.com/ColegioNovosTempos/?locale=pt_BR&_rdc=1&_rdr#" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2">
+            <a href={facebookUrl} target="_blank" rel="noopener noreferrer" className="flex items-center gap-2">
               <Facebook className="h-6 w-6" />
               <span>Facebook</span>
             </a>
@@ -39,7 +53,7 @@ const SocialBanner = () => {
             asChild
             className="bg-colegio-azul text-white hover:bg-gray-100 rounded-full text-lg font-bold px-8 py-6"
           >
-            <a href="https://www.instagram.com/colegionovostempos/" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2">
+            <a href={instagramUrl} target="_blank" rel="noopener noreferrer" className="flex items-center gap-2">
               <Instagram className="h-6 w-6" />
               <span>Instagram</span>
             </a>
@@ -49,7 +63,7 @@ const SocialBanner = () => {
             asChild
             className="bg-colegio-azul text-white hover:bg-gray-100 rounded-full text-lg font-bold px-8 py-6"
           >
-            <a href="https://www.youtube.com/c/Col%C3%A9gioNovosTemposContagem" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2">
+            <a href={youtubeUrl} target="_blank" rel="noopener noreferrer" className="flex items-center gap-2">
               <Youtube className="h-6 w-6" />
               <span>YouTube</span>
             </a>
@@ -59,7 +73,7 @@ const SocialBanner = () => {
             asChild
             className="bg-colegio-azul text-white hover:bg-gray-100 rounded-full text-lg font-bold px-8 py-6"
           >
-            <a href="https://x.com/novos_tempos" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2">
+            <a href={twitterUrl} target="_blank" rel="noopener noreferrer" className="flex items-center gap-2">
               <XIcon className="h-6 w-6" />
               <span>Twitter</span>
             </a>
@@ -69,7 +83,7 @@ const SocialBanner = () => {
             asChild
             className="bg-colegio-azul text-white hover:bg-gray-100 rounded-full text-lg font-bold px-8 py-6"
           >
-            <a href="https://www.tiktok.com/@colegionovostempos" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2">
+            <a href={tiktokUrl} target="_blank" rel="noopener noreferrer" className="flex items-center gap-2">
               <svg 
                 xmlns="http://www.w3.org/2000/svg" 
                 width="24" 

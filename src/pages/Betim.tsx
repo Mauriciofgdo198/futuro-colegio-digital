@@ -17,7 +17,10 @@ const Betim = () => {
         <MatriculaBanner />
         <EnsinoSection />
         <VideoSection videoId="G6wrCjsnRsE" videoTitle="Visite o Novos Tempos" />
-        <SocialBanner />
+        <SocialBanner 
+          instagramUrl="https://www.instagram.com/colegionovostemposbetim/"
+          facebookUrl="https://www.facebook.com/people/Colegionovostemposbetim/61565463054633/"
+        />
       </main>
       <Footer />
       <WhatsAppButton />
