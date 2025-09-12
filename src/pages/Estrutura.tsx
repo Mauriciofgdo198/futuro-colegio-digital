@@ -41,19 +41,19 @@ const Estrutura = () => {
     {
       id: "laboratorio-multidisciplinar",
       title: "Laboratório Multidisciplinar",
-      imageUrl: "https://images.unsplash.com/photo-1488972685288-c3fd157d7c7a?ixlib=rb-1.2.1&auto=format&fit=crop&w=1200&q=80",
+      imageUrl: "/assets/betim/auditorio2.jpg",
       description: "O objetivo é oferecer aos alunos um espaço dedicado às atividades práticas em Ciências, Biologia, Química e Física, essencial para o desenvolvimento pedagógico. Esse espaço facilita a integração entre teoria e prática, enriquecendo as atividades realizadas em sala de aula. No laboratório, desenvolvemos atividades que estimulam a curiosidade e o interesse dos alunos por diversas áreas, incentivando-os a identificar problemas, levantar hipóteses, observar, descobrir, analisar resultados, concluir e solucionar experimentos. As atividades práticas comprovam nossos estudos teóricos e contribuem para o avanço biotecnológico, formando futuros cientistas. Observação: Todos os alunos são acompanhados por um professor gestor específico da área, garantindo cuidado e segurança."
     },
     {
       id: "loja-griffe-nt",
       title: "Loja Griffe NT",
-      imageUrl: "https://images.unsplash.com/photo-1496307653780-42ee777d4833?ixlib=rb-1.2.1&auto=format&fit=crop&w=1200&q=80",
+      imageUrl: "/assets/betim/espaco-sonhos1.webp",
       description: "Em nossa loja, você encontrará toda a linha de uniformes oficiais do Colégio Novos Tempos. Disponibilizamos camisas, calças, shorts, bermudas, agasalhos e uniformes esportivos. Os tamanhos para Educação Infantil, Ensino Fundamental e Ensino Médio podem ser conferidos na Loja Griffe NT."
     },
     {
       id: "pensamento-computacional",
       title: "Pensamento Computacional",
-      imageUrl: "https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?ixlib=rb-1.2.1&auto=format&fit=crop&w=1200&q=80",
+      imageUrl: "/assets/betim/espaco-sonhos3.webp",
       description: "Em um ambiente especialmente projetado para o pensamento computacional, os alunos terão a oportunidade de aplicar tecnologias digitais como programação, robótica, eletrônica digital, internet das coisas, inteligência artificial e práticas Maker"
     },
     {
@@ -65,7 +65,7 @@ const Estrutura = () => {
     {
       id: "pracinha",
       title: "Pracinha",
-      imageUrl: "https://images.unsplash.com/photo-1551038247-3d9af20df552?ixlib=rb-1.2.1&auto=format&fit=crop&w=1200&q=80",
+      imageUrl: "/assets/betim/espaco-sonhos2.webp",
       description: "Um espaço ao ar livre com uma área verde, preparado para receber nossos alunos em diversas atividades pedagógicas, bem como em momentos de encontro e oportunidades."
     },
     {
@@ -77,7 +77,7 @@ const Estrutura = () => {
     {
       id: "hall-conquistas",
       title: "Hall das Conquistas",
-      imageUrl: "https://images.unsplash.com/photo-1518005020951-eccb494ad742?ixlib=rb-1.2.1&auto=format&fit=crop&w=1200&q=80",
+      imageUrl: "/assets/betim/biblioteca.jpg",
       description: "O espaço é dedicado a exibir todos os troféus, medalhas, diplomas e certificados que homenageiam o instituto. As conquistas são exibidas em estantes e quadros com iluminação especial, acompanhados de uma placa identificando o local. Os títulos e participações lembrados no Hall das Conquistas celebram a história do colégio, com destaque nas áreas de esporte, educação e mundo empresarial."
     },
     {
@@ -155,7 +155,7 @@ Clique aqui e consulte nosso acervo`
     {
       id: "lanchonete",
       title: "Lanchonete",
-      imageUrl: "https://images.unsplash.com/photo-1493397212122-2b85dda8106b?ixlib=rb-1.2.1&auto=format&fit=crop&w=1200&q=80",
+      imageUrl: "/assets/betim/cozinha-pedagogica.jpg",
       description: "A NT Lanches é nosso espaço dedicado a lanches e refeições para a comunidade escolar. O local é amplo, arejado e totalmente preparado para oferecer uma alimentação de qualidade e saudável."
     },
     {
