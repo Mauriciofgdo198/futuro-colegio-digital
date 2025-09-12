@@ -35,7 +35,7 @@ const Estrutura = () => {
     {
       id: "auditorio",
       title: "Auditório",
-      imageUrl: "https://images.unsplash.com/photo-1492321936769-b49830bc1d1e?ixlib=rb-1.2.1&auto=format&fit=crop&w=1200&q=80",
+      imageUrl: "/assets/betim/auditorio1.jpg",
       description: "O auditório do IENT, com capacidade para 190 pessoas, é um espaço moderno equipado com uma variedade de recursos multimídia. Possui uma tela para exibição de vídeos, apresentações de trabalhos, palestras e peças teatrais, garantindo uma excelente visualização de diferentes ângulos para o público. Esse ambiente é essencial para o funcionamento do instituto, recebendo reuniões internas, encontros com pais e diversas atividades escolares."
     },
     {
@@ -59,7 +59,7 @@ const Estrutura = () => {
     {
       id: "estudio-comunicacao",
       title: "Estúdio de Comunicação",
-      imageUrl: "https://images.unsplash.com/photo-1494891848038-7bd202a2afeb?ixlib=rb-1.2.1&auto=format&fit=crop&w=1200&q=80",
+      imageUrl: "/assets/betim/estudio.webp",
       description: "Um espaço dedicado à comunicação e marketing. Nossos alunos têm a oportunidade de produzir conteúdos e explorar novas possibilidades nas diversas mídias digitais."
     },
     {
@@ -71,7 +71,7 @@ const Estrutura = () => {
     {
       id: "centro-infantil",
       title: "Centro Infantil",
-      imageUrl: "https://images.unsplash.com/photo-1721322800607-8c38375eef04?ixlib=rb-1.2.1&auto=format&fit=crop&w=1200&q=80",
+      imageUrl: "/assets/betim/centro-infantil.jpeg",
       description: "Espaço destinado aos alunos da Ed. Infantil. composto por salas de aula, banheiros exclusivos, Espaço dos Sonhos e sala de psicomotricidade. Nesse espaço as crianças de 2 a 5 anos são recebidas diariamente com toda segurança e peculiaridades que a faixa-etária precisa. Além disso, no pátio do Centro Infantil frequentemente são desenvolvidas atividades lúdicas envolvendo alunos do Maternal, 1º e 2º períodos."
     },
     {
@@ -83,13 +83,13 @@ const Estrutura = () => {
     {
       id: "acessibilidade",
       title: "Acessibilidade",
-      imageUrl: "https://images.unsplash.com/photo-1466442929976-97f336a657be?ixlib=rb-1.2.1&auto=format&fit=crop&w=1200&q=80",
+      imageUrl: "/assets/betim/acessibilidade.webp",
       description: "O Colégio Novos Tempos está equipado com diversas adaptações para garantir o acesso de pessoas portadoras de necessidades especiais. Entre os dispositivos instalados, estão rampas, corrimãos, faixa tátil e elevador, todos voltados a melhor atender a comunidade escolar."
     },
     {
       id: "biblioteca",
       title: "Biblioteca",
-      imageUrl: "https://images.unsplash.com/photo-1486718448742-163732cd1544?ixlib=rb-1.2.1&auto=format&fit=crop&w=1200&q=80",
+      imageUrl: "/assets/betim/biblioteca.jpg",
       description: `A Biblioteca Novos Tempos é um centro de recursos educativos, integrada ao processo de ensino-aprendizagem, com o objetivo de promover e desenvolver o hábito da leitura e o acesso à informação.
 
 Seu acervo é variado, incluindo livros didáticos, literatura e obras de referência, como enciclopédias, dicionários, almanaques, atlas, revistas, materiais audiovisuais, e outros recursos especiais. Estamos constantemente ampliando nosso acervo para manter as informações sempre atualizadas e enriquecidas.
@@ -161,13 +161,13 @@ Clique aqui e consulte nosso acervo`
     {
       id: "cozinha-pedagogica",
       title: "Cozinha Pedagógica",
-      imageUrl: "https://images.unsplash.com/photo-1461749280684-dccba630e2f6?ixlib=rb-1.2.1&auto=format&fit=crop&w=1200&q=80",
+      imageUrl: "/assets/betim/cozinha-pedagogica.jpg",
       description: "A educação alimentar faz parte do nosso currículo, tanto dentro quanto fora da sala de aula. Na Cozinha Pedagógica, os alunos vivenciam momentos científicos com o objetivo de desenvolver cooperação, participação e interação. Através de atividades práticas, eles adquirem noções básicas de nutrição, higiene, cuidados com os alimentos e qualidade."
     },
     {
       id: "espaco-sonhos",
       title: "Espaço dos Sonhos",
-      imageUrl: "https://images.unsplash.com/photo-1544551763-46a013bb70d5?ixlib=rb-1.2.1&auto=format&fit=crop&w=1200&q=80",
+      imageUrl: "/assets/betim/espaco-sonhos2.webp",
       description: "O Espaço dos Sonhos é um ambiente ao ar livre que proporciona às crianças um contato direto com a grama, estimulando a brincadeira e a criatividade. Com atividades como a Paredarte, jogos como O Chão é Lava e Amarelinha, além de muitas outras, o espaço é perfeito para diversão e aprendizado ao ar livre."
     }
   ];
