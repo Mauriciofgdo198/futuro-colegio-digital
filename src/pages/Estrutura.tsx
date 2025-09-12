@@ -52,19 +52,19 @@ const Estrutura = () => {
     },
     {
       id: "pensamento-computacional",
-      title: "PENSAMENTO COMPUTACIONAL",
+      title: "Pensamento Computacional",
       imageUrl: "https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?ixlib=rb-1.2.1&auto=format&fit=crop&w=1200&q=80",
       description: "Em um ambiente especialmente projetado para o pensamento computacional, os alunos terão a oportunidade de aplicar tecnologias digitais como programação, robótica, eletrônica digital, internet das coisas, inteligência artificial e práticas Maker"
     },
     {
       id: "estudio-comunicacao",
-      title: "ESTÚDIO DE COMUNICAÇÃO",
+      title: "Estúdio",
       imageUrl: "https://images.unsplash.com/photo-1494891848038-7bd202a2afeb?ixlib=rb-1.2.1&auto=format&fit=crop&w=1200&q=80",
       description: "Um espaço dedicado à comunicação e marketing. Nossos alunos têm a oportunidade de produzir conteúdos e explorar novas possibilidades nas diversas mídias digitais."
     },
     {
       id: "pracinha",
-      title: "PRACINHA",
+      title: "Pracinha",
       imageUrl: "https://images.unsplash.com/photo-1551038247-3d9af20df552?ixlib=rb-1.2.1&auto=format&fit=crop&w=1200&q=80",
       description: "Um espaço ao ar livre com uma área verde, preparado para receber nossos alunos em diversas atividades pedagógicas, bem como em momentos de encontro e oportunidades."
     },
@@ -100,7 +100,7 @@ const Estrutura = () => {
     },
     {
       id: "cozinha-pedagogica",
-      title: "COZINHA PEDAGÓGICA",
+      title: "Cozinha Pedagógica",
       imageUrl: "https://images.unsplash.com/photo-1461749280684-dccba630e2f6?ixlib=rb-1.2.1&auto=format&fit=crop&w=1200&q=80",
       description: "A educação alimentar faz parte do nosso currículo, tanto dentro quanto fora da sala de aula. Na Cozinha Pedagógica, os alunos vivenciam momentos científicos com o objetivo de desenvolver cooperação, participação e interação. Através de atividades práticas, eles adquirem noções básicas de nutrição, higiene, cuidados com os alimentos e qualidade."
     },
@@ -146,19 +146,19 @@ const Estrutura = () => {
     },
     {
       id: "pensamento-computacional",
-      title: "PENSAMENTO COMPUTACIONAL",
+      title: "Pensamento Computacional",
       imageUrl: "https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?ixlib=rb-1.2.1&auto=format&fit=crop&w=1200&q=80",
       description: "Por meio de um ambiente especialmente projetado para o pensamento computacional, os alunos aplicarão tecnologias digitais como programação, robótica, eletrônica digital, internet das coisas, inteligência artificial e práticas Maker"
     },
     {
       id: "estudio-comunicacao",
-      title: "ESTÚDIO DE COMUNICAÇÃO",
+      title: "Estúdio",
       imageUrl: "https://images.unsplash.com/photo-1494891848038-7bd202a2afeb?ixlib=rb-1.2.1&auto=format&fit=crop&w=1200&q=80",
       description: "Um espaço de comunicação e Marketing. Nossos alunos tem a oportunidade de produzir conteúdos e criar novas possibilidades nas diversas mídias digitais."
     },
     {
       id: "pracinha",
-      title: "PRACINHA",
+      title: "Pracinha",
       imageUrl: "https://images.unsplash.com/photo-1551038247-3d9af20df552?ixlib=rb-1.2.1&auto=format&fit=crop&w=1200&q=80",
       description: "Um espaço ao ar livre, com área verde, pronto para receber nossos alunos em diversas atividades pedagógicas e também em momentos de encontro e oportunidades."
     },
@@ -194,13 +194,13 @@ const Estrutura = () => {
     },
     {
       id: "cozinha-pedagogica",
-      title: "COZINHA PEDAGÓGICA",
+      title: "Cozinha Pedagógica",
       imageUrl: "https://images.unsplash.com/photo-1461749280684-dccba630e2f6?ixlib=rb-1.2.1&auto=format&fit=crop&w=1200&q=80",
       description: "Educação alimentar faz parte do nosso currículo, dentro e fora da sala de aula. Na Cozinha Pedagógica, pode-se vivenciar momentos científicos, tendo como objetivo desenvolver a cooperação, a participação e a interação entre os alunos. Por meio de atividades, desenvolvem-se noções básicas de nutrição, higiene, cuidados com os alimentos e qualidade."
     },
     {
       id: "playground",
-      title: "PLAYGROUND",
+      title: "Playground",
       imageUrl: "https://images.unsplash.com/photo-1544551763-46a013bb70d5?ixlib=rb-1.2.1&auto=format&fit=crop&w=1200&q=80",
       description: "Nosso playground é uma área de recreação exclusiva para que as crianças possam se divertir e desenvolver seus conhecimentos com segurança. Nessa área de lazer exclusiva é oferecida ótimas oportunidades para os pequenos se divertirem."
     }
