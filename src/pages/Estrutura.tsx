@@ -58,7 +58,7 @@ const Estrutura = () => {
     },
     {
       id: "estudio-comunicacao",
-      title: "Estúdio",
+      title: "Estúdio de Comunicação",
       imageUrl: "https://images.unsplash.com/photo-1494891848038-7bd202a2afeb?ixlib=rb-1.2.1&auto=format&fit=crop&w=1200&q=80",
       description: "Um espaço dedicado à comunicação e marketing. Nossos alunos têm a oportunidade de produzir conteúdos e explorar novas possibilidades nas diversas mídias digitais."
     },
@@ -90,7 +90,67 @@ const Estrutura = () => {
       id: "biblioteca",
       title: "Biblioteca",
       imageUrl: "https://images.unsplash.com/photo-1486718448742-163732cd1544?ixlib=rb-1.2.1&auto=format&fit=crop&w=1200&q=80",
-      description: "A Biblioteca Novos Tempos é um centro de recursos educativos, integrada ao processo de ensino-aprendizagem, com o objetivo de promover e desenvolver o hábito da leitura e o acesso à informação. Seu acervo é variado, incluindo livros didáticos, literatura e obras de referência, como enciclopédias, dicionários, almanaques, atlas, revistas, materiais audiovisuais, e outros recursos especiais. Estamos constantemente ampliando nosso acervo para manter as informações sempre atualizadas e enriquecidas. A Biblioteca está pronta para colaborar com a equipe docente no desenvolvimento de atividades pedagógicas, facilitando, integrando e dinamizando o processo de ensino e aprendizagem, formando cidadãos reflexivos, orientando alunos e professores na pesquisa escolar e incentivando o prazer pela leitura."
+      description: `A Biblioteca Novos Tempos é um centro de recursos educativos, integrada ao processo de ensino-aprendizagem, com o objetivo de promover e desenvolver o hábito da leitura e o acesso à informação.
+
+Seu acervo é variado, incluindo livros didáticos, literatura e obras de referência, como enciclopédias, dicionários, almanaques, atlas, revistas, materiais audiovisuais, e outros recursos especiais. Estamos constantemente ampliando nosso acervo para manter as informações sempre atualizadas e enriquecidas.
+
+A Biblioteca está pronta para colaborar com a equipe docente no desenvolvimento de atividades pedagógicas, facilitando, integrando e dinamizando o processo de ensino e aprendizagem, formando cidadãos reflexivos, orientando alunos e professores na pesquisa escolar e incentivando o prazer pela leitura.
+
+O acervo da Biblioteca Novos Tempos está informatizado e dividido nas seguintes categorias:
+• Obras de Referência (enciclopédias, dicionários, atlas, almanaques)
+• Gibiteca
+• Biblioteca do Professor
+• Literatura infanto-juvenil
+• Literatura infantil
+• Cdteca
+• Videoteca
+• Periódicos (revistas)
+
+Oferecemos os seguintes serviços:
+• Empréstimos, devoluções, renovações e reservas automatizados
+• Referência (orientação individual ao usuário)
+• Catálogo automatizado
+• Acesso gratuito à Internet
+• Hora do Conto
+• Apoio à Pesquisa
+• Consulta local
+
+Para garantir a boa organização e atendimento nos serviços prestados pela biblioteca, reforçamos algumas normas importantes que fazem parte de nossa rotina:
+
+O espaço da biblioteca é destinado, principalmente, ao estudo, pesquisa e leitura, não sendo permitido o uso para atividades como ensaios de teatro, jogos ou confecção de cartazes. Portanto, o uso de tesoura, cola, tinta e estilete não será permitido.
+
+Ao entrar, o usuário deve deixar objetos como som, celulares, mochilas e similares nos escaninhos da biblioteca, sendo de responsabilidade do aluno a guarda desse material. Ao sair, esses itens devem ser retirados.
+
+Desenvolvemos o projeto "Hora do Conto" como parte de um programa de incentivo à leitura para a Educação Infantil e Ensino Fundamental I.
+
+Na videoteca, o usuário pode locar DVDs por um período de 10 (dez) dias e é responsável por eventuais perdas ou danos, devendo repor o material.
+
+Para atendimento de pesquisas escolares, solicitamos que o usuário agende um horário com o(a) bibliotecário(a) e traga uma autorização assinada de casa.
+
+O horário de funcionamento é de segunda a sexta-feira, das 07:00h às 12:00h e das 13:00h às 18:00h.
+
+Regulamento do serviço de empréstimos de livros:
+• Todos os usuários cadastrados como leitores, incluindo alunos, professores, pais e funcionários, têm direito a empréstimo domiciliar de livros.
+• Cada leitor pode retirar simultaneamente dois livros (literatura e pesquisa).
+• O prazo de empréstimo é de dez dias consecutivos, podendo ser renovado, desde que a obra não esteja reservada por outro leitor.
+• A renovação de empréstimos só será feita mediante a apresentação dos livros.
+• Em caso de atraso nas devoluções, o leitor perderá o direito a novos empréstimos por um período igual ao do atraso, a contar da data de devolução.
+• No caso de atraso de livros reservados, o período de suspensão será dobrado.
+• O leitor é diretamente responsável pelas obras que retirar da biblioteca. Em caso de perdas ou danos, deverá restituir outro exemplar da mesma obra. Se a obra estiver esgotada, a biblioteca indicará outro título de igual valor para substituição.
+• Obras de referência e revistas não serão emprestadas, mas podem ser consultadas na biblioteca. O empréstimo dessas obras para reprodução será permitido.
+• Não é permitido lanchar dentro da biblioteca.
+• Os casos omissos neste regulamento serão resolvidos pela coordenação pedagógica e/ou direção.
+
+O que a biblioteca espera de você:
+Em primeiro lugar, que utilize a biblioteca.
+Que respeite seu regulamento e seu acervo.
+Que ofereça sugestões para melhorar os serviços ou para corrigir eventuais falhas.
+
+Pensamentos:
+"Mas não basta a existência de uma biblioteca, por mais bem organizada e equipada que esteja, para criar nas pessoas o gosto pela leitura. Ela deve se afirmar perante a comunidade com um serviço cuja utilização, além de fácil e agradável, se torne uma necessidade. Em outras palavras, a biblioteca só cumprirá bem suas funções se sua frequência se tornar tão comum quanto a ida ao mercado ou ao café."
+(Joaquim Portilheiro)
+
+Clique aqui e consulte nosso acervo`
     },
     {
       id: "lanchonete",
