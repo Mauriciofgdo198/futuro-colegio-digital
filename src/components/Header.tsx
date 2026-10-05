@@ -283,7 +283,7 @@ const Header = () => {
         <div className="py-4 px-2 space-y-6">
           <div className="mb-6">
             <Link to="/" className="flex justify-center">
-              <img src="/lovable-uploads/a78ac681-2089-42e4-8fc6-e3bbda2d5317.png" alt="Colégio Novos Tempos" className="h-16 object-contain" />
+              <img src="/assets/a78ac681-2089-42e4-8fc6-e3bbda2d5317.png" alt="Colégio Novos Tempos" className="h-16 object-contain" />
             </Link>
           </div>
           
@@ -431,7 +431,7 @@ const Header = () => {
           <div className="flex-shrink-0 flex justify-center mx-4">
             <Link to="/" className="flex items-center">
               <img 
-                src="/lovable-uploads/a78ac681-2089-42e4-8fc6-e3bbda2d5317.png" 
+                src="/assets/a78ac681-2089-42e4-8fc6-e3bbda2d5317.png" 
                 alt="Colégio Novos Tempos" 
                 className="h-20 object-contain"
               />

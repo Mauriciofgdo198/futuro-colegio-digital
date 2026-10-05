@@ -27,7 +27,7 @@ const UnitSelection = () => {
           {/* Logo */}
           <div className="mb-6">
             <img 
-              src="/lovable-uploads/a78ac681-2089-42e4-8fc6-e3bbda2d5317.png" 
+              src="/assets/a78ac681-2089-42e4-8fc6-e3bbda2d5317.png" 
               alt="Instituto de Ensino Novos Tempos" 
               className="h-20 md:h-28 lg:h-32 mx-auto"
             />

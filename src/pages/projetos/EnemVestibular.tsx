@@ -26,21 +26,21 @@ const EnemVestibular = () => {
     course: "Administração de Empresas",
     university: "PUC Minas",
     year: 2024,
-    imageUrl: "/lovable-uploads/a92713e7-a83e-43d6-a7aa-1cbcf68c9cdc.png"
+    imageUrl: "/assets/a92713e7-a83e-43d6-a7aa-1cbcf68c9cdc.png"
   }, {
     id: "2",
     name: "Ana Luísa Gonçalves",
     course: "Engenharia Mecânica",
     university: "UFOP, UNA e PUC Minas",
     year: 2024,
-    imageUrl: "/lovable-uploads/a92713e7-a83e-43d6-a7aa-1cbcf68c9cdc.png"
+    imageUrl: "/assets/a92713e7-a83e-43d6-a7aa-1cbcf68c9cdc.png"
   }, {
     id: "3",
     name: "Melyssa Oliveira Diniz",
     course: "Ciências Econômicas",
     university: "UNA",
     year: 2024,
-    imageUrl: "/lovable-uploads/a92713e7-a83e-43d6-a7aa-1cbcf68c9cdc.png"
+    imageUrl: "/assets/a92713e7-a83e-43d6-a7aa-1cbcf68c9cdc.png"
   }, {
     id: "4",
     name: "Pedro Henrique Alves",

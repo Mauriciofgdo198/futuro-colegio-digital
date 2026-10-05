@@ -40,7 +40,7 @@ const Lient = () => {
             </div>
             
             <div>
-              <img src="/lovable-uploads/a78ac681-2089-42e4-8fc6-e3bbda2d5317.png" alt="Lient - Mascote do Instituto Novos Tempos" className="w-full max-w-xs mx-auto object-contain" />
+              <img src="/assets/a78ac681-2089-42e4-8fc6-e3bbda2d5317.png" alt="Lient - Mascote do Instituto Novos Tempos" className="w-full max-w-xs mx-auto object-contain" />
               
               <div className="mt-8 bg-white rounded-lg shadow-md p-6">
                 <h3 className="text-xl font-bold mb-4 text-center text-colegio-azul">LIENT GAMES</h3>
